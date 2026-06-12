@@ -53,7 +53,7 @@
     "match-003": {
       "id": "match-003",
       "fase": "Fase de grupos",
-      "estado": "Programado",
+      "estado": "En Juego",
       "grupo": "B",
       "fecha": "2026-06-12",
       "hora": "14:00",
@@ -63,7 +63,7 @@
         "codeFifa": "CAN",
         "codeIso": "CA",
         "urlFlag": "https://flagcdn.com/ca.svg",
-        "goles": 0,
+        "goles": 1,
         "id": "team-011"
       },
       "visitante": {
@@ -71,7 +71,7 @@
         "codeFifa": "BIH",
         "codeIso": "BA",
         "urlFlag": "https://flagcdn.com/ba.svg",
-        "goles": 0,
+        "goles": 2,
         "id": "team-008"
       }
     },
@@ -3651,7 +3651,7 @@
       }
     ]
   },
-  "lastUpdated": 1781286302880,
+  "lastUpdated": 1781286358345,
   "totalMatches": 104,
   "syncedBy": "sistema"
 }
