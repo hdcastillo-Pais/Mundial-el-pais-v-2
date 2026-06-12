@@ -27,8 +27,8 @@
  *
  * ⚠️  ACTUALIZA estos dos valores con los datos reales de tu repo:
  */
-const REPO_OWNER = 'tu-usuario';       // ← Cambia esto
-const REPO_NAME  = 'mundial-2026';     // ← Cambia esto
+const REPO_OWNER = 'hdcastillo-Pais';       // ← Cambia esto
+const REPO_NAME  = 'Mundial-el-pais-v-2';     // ← Cambia esto
 
 const DATA_URL      = `https://${REPO_OWNER}.github.io/${REPO_NAME}/data.json`;
 const POLL_INTERVAL = 45000; // ms — 45 segundos entre consultas
