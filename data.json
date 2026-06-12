@@ -228,7 +228,7 @@
     "match-010": {
       "id": "match-010",
       "fase": "Fase de grupos",
-      "estado": "Finalizado",
+      "estado": "Programado",
       "grupo": "F",
       "fecha": "2026-06-14",
       "hora": "15:00",
@@ -253,7 +253,7 @@
     "match-011": {
       "id": "match-011",
       "fase": "Fase de grupos",
-      "estado": "Finalizado",
+      "estado": "Programado",
       "grupo": "E",
       "fecha": "2026-06-14",
       "hora": "18:00",
@@ -278,7 +278,7 @@
     "match-012": {
       "id": "match-012",
       "fase": "Fase de grupos",
-      "estado": "Finalizado",
+      "estado": "Programado",
       "grupo": "F",
       "fecha": "2026-06-14",
       "hora": "21:00",
@@ -2866,30 +2866,14 @@
         "codeIso": "CI",
         "urlFlag": "https://flagcdn.com/ci.svg",
         "grupo": "E",
-        "pj": 1,
+        "pj": 0,
         "pg": 0,
-        "pe": 1,
+        "pe": 0,
         "pp": 0,
         "gf": 0,
         "gc": 0,
         "dg": 0,
-        "pts": 1
-      },
-      {
-        "id": "team-018",
-        "nombre": "Ecuador",
-        "codeFifa": "ECU",
-        "codeIso": "EC",
-        "urlFlag": "https://flagcdn.com/ec.svg",
-        "grupo": "E",
-        "pj": 1,
-        "pg": 0,
-        "pe": 1,
-        "pp": 0,
-        "gf": 0,
-        "gc": 0,
-        "dg": 0,
-        "pts": 1
+        "pts": 0
       },
       {
         "id": "team-001",
@@ -2913,6 +2897,22 @@
         "codeFifa": "CUW",
         "codeIso": "CW",
         "urlFlag": "https://flagcdn.com/cw.svg",
+        "grupo": "E",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-018",
+        "nombre": "Ecuador",
+        "codeFifa": "ECU",
+        "codeIso": "EC",
+        "urlFlag": "https://flagcdn.com/ec.svg",
         "grupo": "E",
         "pj": 0,
         "pg": 0,
@@ -3592,14 +3592,14 @@
         "codeIso": "SE",
         "urlFlag": "https://flagcdn.com/se.svg",
         "grupo": "F",
-        "pj": 1,
+        "pj": 0,
         "pg": 0,
-        "pe": 1,
+        "pe": 0,
         "pp": 0,
         "gf": 0,
         "gc": 0,
         "dg": 0,
-        "pts": 1
+        "pts": 0
       },
       {
         "id": "team-029",
@@ -3608,14 +3608,14 @@
         "codeIso": "JP",
         "urlFlag": "https://flagcdn.com/jp.svg",
         "grupo": "F",
-        "pj": 1,
+        "pj": 0,
         "pg": 0,
-        "pe": 1,
+        "pe": 0,
         "pp": 0,
         "gf": 0,
         "gc": 0,
         "dg": 0,
-        "pts": 1
+        "pts": 0
       },
       {
         "id": "team-035",
@@ -3624,14 +3624,14 @@
         "codeIso": "NL",
         "urlFlag": "https://flagcdn.com/nl.svg",
         "grupo": "F",
-        "pj": 1,
+        "pj": 0,
         "pg": 0,
-        "pe": 1,
+        "pe": 0,
         "pp": 0,
         "gf": 0,
         "gc": 0,
         "dg": 0,
-        "pts": 1
+        "pts": 0
       },
       {
         "id": "team-045",
@@ -3640,18 +3640,18 @@
         "codeIso": "TN",
         "urlFlag": "https://flagcdn.com/tn.svg",
         "grupo": "F",
-        "pj": 1,
+        "pj": 0,
         "pg": 0,
-        "pe": 1,
+        "pe": 0,
         "pp": 0,
         "gf": 0,
         "gc": 0,
         "dg": 0,
-        "pts": 1
+        "pts": 0
       }
     ]
   },
-  "lastUpdated": 1781286039334,
+  "lastUpdated": 1781286133999,
   "totalMatches": 104,
   "syncedBy": "sistema"
 }
