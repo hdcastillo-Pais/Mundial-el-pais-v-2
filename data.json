@@ -103,7 +103,7 @@
     "match-005": {
       "id": "match-005",
       "fase": "Fase de grupos",
-      "estado": "Programado",
+      "estado": "Suspendido",
       "grupo": "B",
       "fecha": "2026-06-13",
       "hora": "14:00",
@@ -3651,7 +3651,7 @@
       }
     ]
   },
-  "lastUpdated": 1781286449759,
+  "lastUpdated": 1781286516287,
   "totalMatches": 104,
   "syncedBy": "sistema"
 }
