@@ -63,7 +63,7 @@
         "codeFifa": "CAN",
         "codeIso": "CA",
         "urlFlag": "https://flagcdn.com/ca.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-011"
       },
       "visitante": {
@@ -71,14 +71,14 @@
         "codeFifa": "BIH",
         "codeIso": "BA",
         "urlFlag": "https://flagcdn.com/ba.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-008"
       }
     },
     "match-004": {
       "id": "match-004",
       "fase": "Fase de grupos",
-      "estado": "Programado",
+      "estado": "Finalizado",
       "grupo": "D",
       "fecha": "2026-06-12",
       "hora": "20:00",
@@ -88,7 +88,7 @@
         "codeFifa": "USA",
         "codeIso": "US",
         "urlFlag": "https://flagcdn.com/us.svg",
-        "goles": null,
+        "goles": 3,
         "id": "team-022"
       },
       "visitante": {
@@ -96,14 +96,14 @@
         "codeFifa": "PAR",
         "codeIso": "PY",
         "urlFlag": "https://flagcdn.com/py.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-037"
       }
     },
     "match-005": {
       "id": "match-005",
       "fase": "Fase de grupos",
-      "estado": "Programado",
+      "estado": "Suspendido",
       "grupo": "B",
       "fecha": "2026-06-13",
       "hora": "14:00",
@@ -113,7 +113,7 @@
         "codeFifa": "QAT",
         "codeIso": "QA",
         "urlFlag": "https://flagcdn.com/qa.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-012"
       },
       "visitante": {
@@ -121,14 +121,14 @@
         "codeFifa": "SUI",
         "codeIso": "CH",
         "urlFlag": "https://flagcdn.com/ch.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-044"
       }
     },
     "match-006": {
       "id": "match-006",
       "fase": "Fase de grupos",
-      "estado": "Programado",
+      "estado": "En Juego",
       "grupo": "C",
       "fecha": "2026-06-13",
       "hora": "17:00",
@@ -153,7 +153,7 @@
     "match-007": {
       "id": "match-007",
       "fase": "Fase de grupos",
-      "estado": "Programado",
+      "estado": "Finalizado",
       "grupo": "C",
       "fecha": "2026-06-13",
       "hora": "20:00",
@@ -3064,14 +3064,14 @@
         "codeIso": "US",
         "urlFlag": "https://flagcdn.com/us.svg",
         "grupo": "D",
-        "pj": 0,
-        "pg": 0,
+        "pj": 1,
+        "pg": 1,
         "pe": 0,
         "pp": 0,
-        "gf": 0,
+        "gf": 3,
         "gc": 0,
-        "dg": 0,
-        "pts": 0
+        "dg": 3,
+        "pts": 3
       },
       {
         "id": "team-005",
@@ -3112,13 +3112,13 @@
         "codeIso": "PY",
         "urlFlag": "https://flagcdn.com/py.svg",
         "grupo": "D",
-        "pj": 0,
+        "pj": 1,
         "pg": 0,
         "pe": 0,
-        "pp": 0,
+        "pp": 1,
         "gf": 0,
-        "gc": 0,
-        "dg": 0,
+        "gc": 3,
+        "dg": -3,
         "pts": 0
       }
     ],
@@ -3256,36 +3256,20 @@
     ],
     "C": [
       {
-        "id": "team-009",
-        "nombre": "Brasil",
-        "codeFifa": "BRA",
-        "codeIso": "BR",
-        "urlFlag": "https://flagcdn.com/br.svg",
-        "grupo": "C",
-        "pj": 0,
-        "pg": 0,
-        "pe": 0,
-        "pp": 0,
-        "gf": 0,
-        "gc": 0,
-        "dg": 0,
-        "pts": 0
-      },
-      {
         "id": "team-020",
         "nombre": "Escocia",
         "codeFifa": "SCO",
         "codeIso": "SC",
         "urlFlag": "https://flagcdn.com/gb-sct.svg",
         "grupo": "C",
-        "pj": 0,
+        "pj": 1,
         "pg": 0,
-        "pe": 0,
+        "pe": 1,
         "pp": 0,
         "gf": 0,
         "gc": 0,
         "dg": 0,
-        "pts": 0
+        "pts": 1
       },
       {
         "id": "team-025",
@@ -3293,6 +3277,22 @@
         "codeFifa": "HAI",
         "codeIso": "HT",
         "urlFlag": "https://flagcdn.com/ht.svg",
+        "grupo": "C",
+        "pj": 1,
+        "pg": 0,
+        "pe": 1,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 1
+      },
+      {
+        "id": "team-009",
+        "nombre": "Brasil",
+        "codeFifa": "BRA",
+        "codeIso": "BR",
+        "urlFlag": "https://flagcdn.com/br.svg",
         "grupo": "C",
         "pj": 0,
         "pg": 0,
@@ -3651,7 +3651,7 @@
       }
     ]
   },
-  "lastUpdated": 1781286846913,
+  "lastUpdated": 1781286888562,
   "totalMatches": 104,
   "syncedBy": "sistema"
 }
