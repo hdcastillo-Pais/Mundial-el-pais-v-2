@@ -288,7 +288,7 @@
         "codeFifa": "SWE",
         "codeIso": "SE",
         "urlFlag": "https://flagcdn.com/se.svg",
-        "goles": 3,
+        "goles": 0,
         "id": "team-043"
       },
       "visitante": {
@@ -3593,13 +3593,13 @@
         "urlFlag": "https://flagcdn.com/se.svg",
         "grupo": "F",
         "pj": 1,
-        "pg": 1,
-        "pe": 0,
+        "pg": 0,
+        "pe": 1,
         "pp": 0,
-        "gf": 3,
+        "gf": 0,
         "gc": 0,
-        "dg": 3,
-        "pts": 3
+        "dg": 0,
+        "pts": 1
       },
       {
         "id": "team-029",
@@ -3642,16 +3642,16 @@
         "grupo": "F",
         "pj": 1,
         "pg": 0,
-        "pe": 0,
-        "pp": 1,
+        "pe": 1,
+        "pp": 0,
         "gf": 0,
-        "gc": 3,
-        "dg": -3,
-        "pts": 0
+        "gc": 0,
+        "dg": 0,
+        "pts": 1
       }
     ]
   },
-  "lastUpdated": 1781286035682,
+  "lastUpdated": 1781286039334,
   "totalMatches": 104,
   "syncedBy": "sistema"
 }
