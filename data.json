@@ -221,7 +221,7 @@
         "codeFifa": "CUW",
         "codeIso": "CW",
         "urlFlag": "https://flagcdn.com/cw.svg",
-        "goles": 2,
+        "goles": 0,
         "id": "team-017"
       }
     },
@@ -238,7 +238,7 @@
         "codeFifa": "NED",
         "codeIso": "NL",
         "urlFlag": "https://flagcdn.com/nl.svg",
-        "goles": 1,
+        "goles": 0,
         "id": "team-035"
       },
       "visitante": {
@@ -246,7 +246,7 @@
         "codeFifa": "JPN",
         "codeIso": "JP",
         "urlFlag": "https://flagcdn.com/jp.svg",
-        "goles": 3,
+        "goles": 0,
         "id": "team-029"
       }
     },
@@ -3609,13 +3609,13 @@
         "urlFlag": "https://flagcdn.com/jp.svg",
         "grupo": "F",
         "pj": 1,
-        "pg": 1,
-        "pe": 0,
+        "pg": 0,
+        "pe": 1,
         "pp": 0,
-        "gf": 3,
-        "gc": 1,
-        "dg": 2,
-        "pts": 3
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 1
       },
       {
         "id": "team-035",
@@ -3626,12 +3626,12 @@
         "grupo": "F",
         "pj": 1,
         "pg": 0,
-        "pe": 0,
-        "pp": 1,
-        "gf": 1,
-        "gc": 3,
-        "dg": -2,
-        "pts": 0
+        "pe": 1,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 1
       },
       {
         "id": "team-045",
@@ -3651,7 +3651,7 @@
       }
     ]
   },
-  "lastUpdated": 1781286029277,
+  "lastUpdated": 1781286035682,
   "totalMatches": 104,
   "syncedBy": "sistema"
 }
