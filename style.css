@@ -1,0 +1,706 @@
+/* ============================================================
+   MARCADOR DEPORTIVO — MUNDIAL 2026
+   style.css — Versión 8.0: Tabs + Standings + Team Hub
+   ============================================================ */
+
+/* ── Google Fonts ── */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+/* ============================================================
+   VARIABLES Y TOKENS DE DISEÑO
+   ============================================================ */
+:root {
+  /* Fondos */
+  --bg-widget:       #111113;
+  --bg-header:       #111113;
+  --bg-card:         #1a1a1d;
+  --bg-card-hover:   #222226;
+
+  /* Bordes */
+  --border:          #2a2a30;
+  --border-hover:    rgba(11, 187, 239, 0.35);
+
+  /* Acentos */
+  --accent:          #0bbbef;
+  --accent-alt:      #0099cc;
+  --accent-glow:     rgba(11, 187, 239, 0.18);
+
+  /* Estado EN JUEGO */
+  --live-green:      #22c55e;
+  --live-glow:       rgba(34, 197, 94, 0.22);
+  --live-text:       #000000;
+
+  /* Estado FINALIZADO */
+  --final-bg:        rgba(138, 144, 164, 0.08);
+  --final-text:      #6b7280;
+  --final-border:    rgba(138, 144, 164, 0.18);
+
+  /* Estado SUSPENDIDO */
+  --suspended-bg:    rgba(251, 191, 36, 0.1);
+  --suspended-text:  #fbbf24;
+  --suspended-border: rgba(251, 191, 36, 0.25);
+
+  /* Estado CANCELADO */
+  --cancelled-bg:    rgba(239, 68, 68, 0.1);
+  --cancelled-text:  #ef4444;
+  --cancelled-border: rgba(239, 68, 68, 0.25);
+
+  /* Tipografía */
+  --text-primary:    #f0f2f7;
+  --text-secondary:  #8a90a4;
+  --text-muted:      #4b5563;
+  --text-score:      #ffffff;
+
+  --font-ui:         'Lato', sans-serif;
+  --font-score:      'Lato', sans-serif;
+
+  /* Layout */
+  --card-w:          256px;
+  --card-gap:        12px;
+
+  --radius-sm:       4px;
+  --btn-size:        36px;
+}
+
+/* ============================================================
+   RESET GLOBAL
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background:              transparent;
+  font-family:             var(--font-ui);
+  -webkit-font-smoothing:  antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================================
+   CONTENEDOR RAÍZ
+   ============================================================ */
+#widget-root {
+  width:      100%;
+  background: var(--bg-widget);
+  overflow:   hidden;
+  border:     1px solid var(--border);
+  position:   relative;
+}
+
+/* ============================================================
+   BARRA DE PESTAÑAS PRINCIPAL
+   ============================================================ */
+.tabs-nav {
+  display:          flex;
+  align-items:      center;
+  background:       var(--bg-header);
+  border-bottom:    1px solid var(--border);
+  padding:          0 10px;
+  gap:              2px;
+  overflow-x:       auto;
+  scrollbar-width:  none;
+}
+.tabs-nav::-webkit-scrollbar { display: none; }
+
+.tab-btn {
+  background:     transparent;
+  border:         none;
+  border-bottom:  2px solid transparent;
+  color:          var(--text-secondary);
+  cursor:         pointer;
+  font-family:    var(--font-ui);
+  font-size:      11px;
+  font-weight:    700;
+  letter-spacing: .05em;
+  padding:        10px 14px;
+  text-transform: uppercase;
+  white-space:    nowrap;
+  transition:     color .2s, border-color .2s;
+  flex-shrink:    0;
+}
+
+.tab-btn:hover {
+  color: var(--text-primary);
+}
+
+.tab-btn.active {
+  color:        var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* ============================================================
+   PANELES DE PESTAÑAS
+   ============================================================ */
+.tab-panel {
+  display: block;
+}
+.tab-panel[hidden] {
+  display: none;
+}
+
+/* ============================================================
+   CARRUSEL (existente — sin cambios funcionales)
+   ============================================================ */
+.carousel-wrapper {
+  position:    relative;
+  display:     flex;
+  align-items: stretch;
+}
+
+.carousel-track {
+  display:    flex;
+  gap:        var(--card-gap);
+  overflow-x: auto;
+  cursor:     grab;
+  user-select:         none;
+  -webkit-user-select: none;
+  padding:    14px 14px 16px;
+  width:      100%;
+  /* Rendimiento: contener repaints al área del carrusel */
+  contain:         layout style;
+  /* Scroll suave nativo en mobile */
+  -webkit-overflow-scrolling: touch;
+}
+.carousel-track::-webkit-scrollbar {
+  height:  6px;
+  display: block;
+}
+.carousel-track::-webkit-scrollbar-track  { background: transparent; }
+.carousel-track::-webkit-scrollbar-thumb  {
+  background:    var(--text-muted);
+  border-radius: 10px;
+}
+.carousel-track:hover::-webkit-scrollbar-thumb {
+  background: var(--accent);
+}
+.carousel-track::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-alt);
+  filter:     drop-shadow(0 0 4px var(--accent));
+}
+.carousel-track:active { cursor: grabbing; }
+.carousel-track:active .match-card { cursor: grabbing !important; }
+
+/* ============================================================
+   TEAM HUB — PANEL ACORDEÓN COLAPSABLE
+   ============================================================ */
+.team-hub {
+  max-height:     0;
+  opacity:        0;
+  overflow:       hidden;
+  position:       relative;
+  background:     #16161a;
+  border-top:     1px solid transparent;
+  transition:     max-height .38s cubic-bezier(.4,0,.2,1),
+                  opacity    .28s ease,
+                  border-color .28s ease;
+}
+
+.team-hub.open {
+  max-height:   240px;
+  opacity:      1;
+  border-top-color: var(--border);
+  overflow-y:   auto;
+}
+
+/* Botón cerrar × */
+.team-hub-close {
+  position:    absolute;
+  top:         8px;
+  right:       10px;
+  background:  rgba(255,255,255,.06);
+  border:      1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color:       var(--text-secondary);
+  cursor:      pointer;
+  font-size:   16px;
+  line-height: 1;
+  padding:     2px 7px 4px;
+  transition:  background .2s, color .2s;
+  z-index:     2;
+}
+.team-hub-close:hover {
+  background: rgba(11,187,239,.12);
+  color:      var(--accent);
+}
+
+/* Contenido interno del hub */
+.team-hub-inner {
+  padding: 14px 14px 16px;
+}
+
+.hub-header {
+  display:     flex;
+  align-items: center;
+  gap:         10px;
+  margin-bottom: 12px;
+}
+
+.hub-flag {
+  width:         36px;
+  height:        26px;
+  object-fit:    contain;
+  border-radius: 2px;
+}
+
+.hub-team-name {
+  font-size:      15px;
+  font-weight:    900;
+  color:          var(--text-primary);
+  letter-spacing: .01em;
+}
+
+.hub-stats-grid {
+  display:               grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap:                   6px;
+  margin-bottom:         12px;
+}
+
+.hub-stat {
+  background:  var(--bg-card);
+  border:      1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding:     6px 4px;
+  text-align:  center;
+}
+
+.hub-stat-label {
+  display:        block;
+  font-size:      9px;
+  font-weight:    700;
+  color:          var(--text-muted);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  margin-bottom:  3px;
+}
+
+.hub-stat-value {
+  display:     block;
+  font-size:   16px;
+  font-weight: 900;
+  color:       var(--text-score);
+  line-height: 1;
+}
+
+/* Forma reciente */
+.hub-form-label {
+  font-size:      10px;
+  font-weight:    700;
+  color:          var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  margin-bottom:  6px;
+}
+
+.hub-form-dots {
+  display: flex;
+  gap:     6px;
+}
+
+.form-dot {
+  width:         22px;
+  height:        22px;
+  border-radius: 50%;
+  display:       flex;
+  align-items:   center;
+  justify-content: center;
+  font-size:     9px;
+  font-weight:   700;
+  flex-shrink:   0;
+}
+
+.form-dot.win  { background: var(--live-green); color: #000; }
+.form-dot.draw { background: #374151;           color: var(--text-secondary); }
+.form-dot.loss { background: #ef4444;           color: #fff; }
+.form-dot.none { background: var(--bg-card);    color: var(--text-muted);
+                 border: 1px dashed var(--text-muted); }
+
+/* ============================================================
+   POSICIONES — PESTAÑAS DE GRUPO
+   ============================================================ */
+.group-pills {
+  display:    flex;
+  gap:        4px;
+  padding:    10px 12px 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  flex-wrap:  wrap;
+}
+.group-pills::-webkit-scrollbar { display: none; }
+
+.group-pill {
+  background:     transparent;
+  border:         1px solid var(--border);
+  border-radius:  20px;
+  color:          var(--text-secondary);
+  cursor:         pointer;
+  font-family:    var(--font-ui);
+  font-size:      11px;
+  font-weight:    700;
+  letter-spacing: .04em;
+  padding:        4px 12px;
+  transition:     background .2s, color .2s, border-color .2s;
+  white-space:    nowrap;
+}
+
+.group-pill:hover {
+  border-color: var(--border-hover);
+  color:        var(--text-primary);
+}
+
+.group-pill.active {
+  background:   var(--accent);
+  border-color: var(--accent);
+  color:        #000;
+}
+
+/* ── Tabla de posiciones ── */
+.standings-container {
+  padding: 10px 12px 14px;
+}
+
+.standings-table {
+  width:           100%;
+  border-collapse: collapse;
+  font-size:       12px;
+}
+
+.standings-table th {
+  color:          var(--text-muted);
+  font-size:      10px;
+  font-weight:    700;
+  letter-spacing: .06em;
+  padding:        5px 6px;
+  text-align:     center;
+  text-transform: uppercase;
+  border-bottom:  1px solid var(--border);
+}
+
+.standings-table th:first-child { text-align: left; padding-left: 8px; }
+
+.standings-table td {
+  padding:    6px 6px;
+  text-align: center;
+  color:      var(--text-secondary);
+  border-bottom: 1px solid rgba(42,42,48,.6);
+}
+
+.standings-table td:first-child {
+  text-align:  left;
+  padding-left: 6px;
+}
+
+.standings-table tr:last-child td { border-bottom: none; }
+
+/* Posición (número) */
+.standings-pos {
+  color:      var(--text-muted);
+  font-size:  11px;
+  font-weight: 700;
+  min-width:  18px;
+}
+
+/* Clasificados: filas 1 y 2 con fondo acento sutil */
+.standings-table tr.classified td {
+  background: rgba(11, 187, 239, .06);
+  color:      var(--text-primary);
+}
+.standings-table tr.classified td:first-child {
+  border-left: 2px solid var(--accent);
+}
+
+/* Puntos — destacados */
+.standings-pts {
+  color:       var(--text-primary);
+  font-weight: 900;
+  font-size:   13px;
+}
+
+/* Bandera miniatura en tabla */
+.standings-flag {
+  width:         20px;
+  height:        14px;
+  object-fit:    contain;
+  border-radius: 1px;
+  vertical-align: middle;
+  margin-right:   5px;
+}
+
+.standings-team-name {
+  font-weight:   700;
+  color:         var(--text-primary);
+  font-size:     12px;
+  white-space:   nowrap;
+  overflow:      hidden;
+  text-overflow: ellipsis;
+  max-width:     110px;
+  display:       inline-block;
+  vertical-align: middle;
+}
+
+/* ============================================================
+   LLAVE ELIMINATORIA — SUB-PÍLDORAS DE FASE
+   ============================================================ */
+.phase-pills {
+  display:    flex;
+  gap:        4px;
+  padding:    10px 12px 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.phase-pills::-webkit-scrollbar { display: none; }
+
+.phase-pill {
+  background:     transparent;
+  border:         1px solid var(--border);
+  border-radius:  20px;
+  color:          var(--text-secondary);
+  cursor:         pointer;
+  font-family:    var(--font-ui);
+  font-size:      11px;
+  font-weight:    700;
+  letter-spacing: .04em;
+  padding:        4px 12px;
+  transition:     background .2s, color .2s, border-color .2s;
+  white-space:    nowrap;
+  flex-shrink:    0;
+}
+
+.phase-pill:hover {
+  border-color: var(--border-hover);
+  color:        var(--text-primary);
+}
+
+.phase-pill.active {
+  background:   rgba(11,187,239,.15);
+  border-color: var(--accent);
+  color:        var(--accent);
+}
+
+/* ============================================================
+   TARJETA DE PARTIDO — BASE (sin cambios de lógica)
+   ============================================================ */
+.match-card {
+  flex:           0 0 var(--card-w);
+  width:          var(--card-w);
+  background:     var(--bg-card);
+  border:         1px solid var(--border);
+  border-radius:  var(--radius-sm);
+  padding:        12px 14px 14px;
+  display:        flex;
+  flex-direction: column;
+  gap:            10px;
+  transition:     background .2s, border-color .2s, box-shadow .2s, transform .15s, opacity .3s;
+  cursor:         grab;
+  position:       relative;
+}
+
+.match-card:hover {
+  background:   var(--bg-card-hover);
+  border-color: var(--border-hover);
+  transform:    translateY(-2px);
+}
+
+.match-card.is-live {
+  border-color: var(--live-green);
+  box-shadow:   0 0 0 1px var(--live-green), 0 0 20px var(--live-glow);
+  animation:    card-live-glow 2.4s ease-in-out infinite;
+  will-change:  box-shadow; /* Elevar a capa compositing solo mientras esté EN VIVO */
+}
+.match-card.is-live:hover {
+  border-color: var(--live-green);
+  transform:    translateY(-2px);
+}
+
+@keyframes card-live-glow {
+  0%, 100% { box-shadow: 0 0 0 1px var(--live-green), 0 0 16px var(--live-glow); }
+  50%       { box-shadow: 0 0 0 1px var(--live-green), 0 0 28px rgba(34,197,94,.38); }
+}
+
+.match-card.is-final    { opacity: .6;  filter: saturate(.45); }
+.match-card.is-final:hover { opacity: .85; filter: saturate(.7); }
+.match-card.is-suspended,
+.match-card.is-cancelled { border-style: dashed; opacity: .75; }
+.match-card.is-tbd       { border-style: dashed; border-color: rgba(75,85,99,.5); }
+
+/* ── Metadatos ── */
+.card-meta {
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+  gap:             6px;
+}
+
+.card-status {
+  font-size:      10px;
+  font-weight:    800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  white-space:    nowrap;
+  padding:        3px 8px;
+  border-radius:  var(--radius-sm);
+  flex-shrink:    0;
+}
+
+.card-status.status-scheduled {
+  background: rgba(11,187,239,.1);
+  color:      var(--accent);
+  border:     1px solid rgba(11,187,239,.22);
+}
+.card-status.status-live {
+  background:  var(--live-green);
+  color:       var(--live-text);
+  border:      1px solid var(--live-green);
+  display:     flex;
+  align-items: center;
+  gap:         5px;
+}
+.card-status.status-final     { background: var(--final-bg);     color: var(--final-text);     border: 1px solid var(--final-border); }
+.card-status.status-suspended { background: var(--suspended-bg); color: var(--suspended-text); border: 1px solid var(--suspended-border); }
+.card-status.status-cancelled { background: var(--cancelled-bg); color: var(--cancelled-text); border: 1px solid var(--cancelled-border); }
+
+.live-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--live-text);
+  display: inline-block; flex-shrink: 0;
+  animation: pulse-live 1.4s ease-in-out infinite;
+}
+@keyframes pulse-live {
+  0%, 100% { opacity: 1;  transform: scale(1); }
+  50%       { opacity: .3; transform: scale(.6); }
+}
+
+.card-phase {
+  font-size:      10px; font-weight: 700; color: var(--accent);
+  letter-spacing: .06em; text-transform: uppercase;
+  text-align:     center; margin-top: -2px;
+}
+.card-datetime {
+  font-size:   10px; color: var(--text-secondary); text-align: center;
+  letter-spacing: .04em; margin-top: -4px; padding-top: 2px;
+}
+.card-divider { height: 1px; background: var(--border); margin: 0 -2px; }
+
+/* ── Filas de equipos ── */
+.team-row     { display: flex; align-items: center; gap: 10px; }
+.team-crest   { width: 30px; height: 22px; flex-shrink: 0; display: flex;
+                align-items: center; justify-content: center;
+                overflow: hidden; border-radius: 2px; }
+.team-crest img { width: 100%; height: 100%; object-fit: contain;
+                  border-radius: 2px; display: block; }
+
+/* Cursor pointer en banderas del marcador para activar Team Hub */
+.team-crest.clickable { cursor: pointer; }
+.team-crest.clickable:hover img,
+.team-crest.clickable:hover .crest-fallback {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+  border-radius: 3px;
+}
+
+.crest-fallback {
+  width: 30px; height: 22px; border-radius: 3px;
+  background: linear-gradient(135deg, var(--accent-alt) 0%, var(--accent) 100%);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 7.5px; font-weight: 800; color: #fff;
+  letter-spacing: -.5px; text-transform: uppercase;
+  text-shadow: 0 1px 2px rgba(0,0,0,.4); flex-shrink: 0;
+}
+.crest-tbd {
+  width: 30px; height: 22px; border-radius: 3px;
+  border: 1.5px dashed var(--text-muted);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 7px; font-weight: 700; color: var(--text-muted);
+  letter-spacing: -.3px; flex-shrink: 0;
+}
+
+.team-name  { flex: 1; font-size: 13px; font-weight: 700; color: var(--text-primary);
+              white-space: nowrap; overflow: hidden; text-overflow: ellipsis; letter-spacing: .01em; }
+.team-name.is-tbd { color: var(--text-muted); font-style: italic; font-weight: 500; }
+.team-score { font-family: var(--font-score); font-size: 20px; font-weight: 700;
+              color: var(--text-score); min-width: 22px; text-align: right;
+              letter-spacing: -.02em; flex-shrink: 0; }
+.team-score.empty { color: var(--text-muted); font-size: 15px; font-family: var(--font-ui); }
+.score-separator  { font-family: var(--font-score); font-size: 16px; color: var(--text-muted);
+                    flex-shrink: 0; padding: 0 2px; }
+
+/* ============================================================
+   PANTALLAS DE ESTADO
+   ============================================================ */
+.state-screen {
+  padding: 36px 20px; text-align: center;
+  color: var(--text-secondary); font-size: 13px;
+  letter-spacing: .04em; width: 100%;
+}
+.loading-spinner {
+  display: inline-block; width: 28px; height: 28px;
+  border: 3px solid var(--border); border-top-color: var(--accent);
+  border-radius: 50%; animation: spin .75s linear infinite;
+  margin-bottom: 10px;
+  will-change: transform; /* Spinner en su propia capa GPU */
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+
+
+
+/* ============================================================
+   FIX: Alineación bandera + nombre en tabla de Posiciones
+   Problema: vertical-align inline vs inline-block desajusta
+   la fila cuando la imagen carga asíncronamente.
+   Solución: reemplazar el modelo inline por flexbox en la celda.
+   Solo afecta .standings-table — no toca .team-row del carrusel.
+   ============================================================ */
+.standings-table .team-cell {
+  display:     flex;
+  align-items: center;
+  gap:         6px;
+}
+
+.standings-table .team-cell .standings-flag {
+  /* Quitar vertical-align heredado — flex lo maneja */
+  vertical-align: unset;
+  flex-shrink:    0;
+  /* Dimensiones explícitas para reservar espacio antes de cargar */
+  width:          20px;
+  height:         14px;
+  display:        block;
+  object-fit:     cover;
+  border-radius:  2px;
+}
+
+.standings-table .team-cell .standings-team-name {
+  /* Quitar inline-block — dentro de flex es innecesario */
+  display:       block;
+  vertical-align: unset;
+  /* Evitar que nombres largos rompan la fila */
+  min-width:     0;
+  overflow:      hidden;
+  text-overflow: ellipsis;
+  white-space:   nowrap;
+}
+
+
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 480px) {
+  :root { --card-w: 224px; }
+  .carousel-track { padding: 10px 10px 12px; gap: 10px; }
+  .team-score     { font-size: 19px; }
+  .team-name      { font-size: 12px; }
+  .hub-stats-grid { grid-template-columns: repeat(3, 1fr); }
+  .standings-team-name { max-width: 80px; }
+}
+@media (max-width: 320px) {
+  :root { --card-w: 200px; }
+  .team-score { font-size: 17px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .match-card.is-live, .live-dot, .loading-spinner { animation: none; }
+  .match-card.is-live { box-shadow: 0 0 0 2px var(--live-green); }
+  .team-hub           { transition: none; }
+}

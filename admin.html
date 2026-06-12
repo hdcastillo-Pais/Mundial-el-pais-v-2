@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mundial 2026 — Panel de Redacción</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --panel: #161b22;
+    --panel-2: #1c2330;
+    --line: #2a313d;
+    --text: #e6edf3;
+    --muted: #8b96a5;
+    --accent: #ffb020;
+    --accent-2: #3fb950;
+    --danger: #f85149;
+    --font-ui: 'Inter', -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    --font-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, Menlo, monospace;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-ui);
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+
+  /* ── Top bar ── */
+  header.top {
+    position: sticky; top: 0; z-index: 50;
+    display: flex; align-items: center; justify-content: space-between;
+    background: rgba(22, 27, 34, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+    padding: 12px 24px;
+  }
+  header.top h1 { margin: 0; font-size: 18px; font-weight: 700; display: flex; align-items: center; gap: 8px; }
+  header.top h1 span { color: var(--accent); font-weight: 900; }
+  
+  .controls-right { display: flex; align-items: center; gap: 16px; }
+  .sync-status { font-family: var(--font-mono); font-size: 11px; color: var(--muted); }
+  
+  .btn-save {
+    background: var(--accent-2); color: #000; border: none;
+    padding: 8px 18px; font-size: 13px; font-weight: 700; border-radius: 6px;
+    cursor: pointer; display: inline-flex; align-items: center; gap: 6px;
+    transition: opacity 0.2s;
+  }
+  .btn-save:hover { opacity: 0.9; }
+  .btn-save:disabled { background: var(--line); color: var(--muted); cursor: not-allowed; }
+
+  /* ── Barra de filtros ── */
+  .filter-bar {
+    max-width: 1300px; margin: 20px auto 0; padding: 0 24px;
+    display: flex; gap: 12px; flex-wrap: wrap; align-items: center;
+  }
+  .search-input {
+    background: var(--panel); border: 1px solid var(--line); color: var(--text);
+    padding: 8px 14px; font-size: 13px; border-radius: 6px; width: 260px;
+    outline: none; transition: border-color 0.2s;
+  }
+  .search-input:focus { border-color: var(--accent); }
+  
+  .phase-select {
+    background: var(--panel); border: 1px solid var(--line); color: var(--text);
+    padding: 8px 12px; font-size: 13px; border-radius: 6px; outline: none; cursor: pointer;
+  }
+
+  /* ── Contenedor principal ── */
+  main.wrapper { max-width: 1300px; margin: 0 auto; padding: 20px 24px 60px; }
+  
+  .matches-table {
+    width: 100%; border-collapse: separate; border-spacing: 0;
+    background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
+    overflow: hidden; font-size: 13px;
+  }
+  .matches-table th {
+    background: var(--panel-2); text-align: left; padding: 10px 14px;
+    color: var(--muted); font-weight: 600; border-bottom: 1px solid var(--line);
+    text-transform: uppercase; font-size: 11px; letter-spacing: 0.5px;
+  }
+  .matches-table td { padding: 12px 14px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+  .matches-table tr:last-child td { border-bottom: none; }
+  .matches-table tr:hover td { background: rgba(255,255,255,0.01); }
+
+  /* Utilities por celda */
+  .cell-id { font-family: var(--font-mono); color: var(--muted); width: 80px; }
+  .cell-meta { width: 180px; line-height: 1.4; }
+  .cell-meta .phase { font-weight: 600; color: var(--text); }
+  .cell-meta .datetime { color: var(--muted); font-size: 11px; }
+  
+  /* Bloques de marcadores competitivos */
+  .matchup-container { display: flex; align-items: center; gap: 16px; width: 560px; }
+  .team-block { display: flex; align-items: center; gap: 8px; flex: 1; }
+  .team-block.local { justify-content: flex-end; }
+  .team-block.visitante { justify-content: flex-start; }
+  
+  .team-flag { width: 22px; height: 15px; object-fit: cover; border-radius: 2px; background: #222; flex-shrink: 0; }
+  .team-name-label { font-weight: 500; font-size: 13px; max-width: 140px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  
+  .team-select-combo {
+    background: var(--panel-2); border: 1px solid var(--line); color: var(--accent);
+    padding: 4px 8px; font-size: 12px; border-radius: 4px; max-width: 160px; outline: none; cursor: pointer;
+  }
+  
+  .score-input {
+    width: 44px; height: 32px; background: var(--panel-2); border: 1px solid var(--line);
+    color: #fff; text-align: center; font-size: 15px; font-weight: 700; border-radius: 4px;
+    font-family: var(--font-mono); outline: none; transition: border-color 0.2s;
+  }
+  .score-input:focus { border-color: var(--accent); }
+  .score-input::-webkit-inner-spin-button, 
+  .score-input::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+
+  .vs-divider { color: var(--muted); font-size: 11px; font-weight: 600; text-transform: uppercase; width: 24px; text-align: center; }
+
+  /* SELECTOR DE ESTADOS */
+  .cell-status { width: 140px; }
+  .status-select {
+    width: 100%; background: var(--panel-2); border: 1px solid var(--line); color: var(--text);
+    padding: 6px 10px; font-size: 12px; border-radius: 6px; outline: none; cursor: pointer;
+    font-weight: 500;
+  }
+  .status-select[data-state="En Juego"] { border-color: var(--accent-2); color: var(--accent-2); }
+  .status-select[data-state="Finalizado"] { border-color: var(--muted); color: var(--muted); }
+  .status-select[data-state="Suspendido"], 
+  .status-select[data-state="Cancelado"] { border-color: var(--danger); color: var(--danger); }
+
+  /* ── SECCIÓN DE PRÓRROGA Y PENALES (fases eliminatorias) ── */
+  .knockout-extra {
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: rgba(255, 176, 32, 0.05);
+    border: 1px solid rgba(255, 176, 32, 0.18);
+    border-radius: 6px;
+  }
+  .knockout-extra-title {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin: 0 0 8px;
+  }
+  .extra-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+  .extra-row:last-of-type { margin-bottom: 0; }
+  .extra-label {
+    font-size: 11px;
+    color: var(--muted);
+    width: 72px;
+    flex-shrink: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+  .score-input.sm {
+    width: 36px;
+    height: 28px;
+    font-size: 13px;
+  }
+  .knockout-warning {
+    margin-top: 8px;
+    padding: 6px 10px;
+    background: rgba(248, 81, 73, 0.08);
+    border: 1px solid rgba(248, 81, 73, 0.3);
+    border-radius: 4px;
+    font-size: 11px;
+    color: var(--danger);
+    font-weight: 500;
+  }
+
+  /* Toast global */
+  .toast {
+    position: fixed; bottom: 24px; right: 24px; padding: 12px 24px; border-radius: 6px;
+    font-size: 13px; font-weight: 600; color: #000; box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transform: translateY(100px); opacity: 0; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 100;
+  }
+  .toast.show { transform: translateY(0); opacity: 1; }
+  .toast.success { background: var(--accent-2); }
+  .toast.error { background: var(--danger); color: #fff; }
+
+  /* Spinner de Guardado */
+  .loading-spinner {
+    display: none; width: 14px; height: 14px; border: 2px solid #000;
+    border-top-color: transparent; border-radius: 50%; animation: spin 0.6s linear infinite;
+  }
+  .btn-save.loading .loading-spinner { display: inline-block; }
+  .btn-save.loading span { display: none; }
+  
+  @keyframes spin { to { transform: rotate(360deg); } }
+  
+  .hidden { display: none !important; }
+</style>
+</head>
+<body>
+
+  <header class="top">
+    <h1><span>EL PAÍS</span> MUNDIAL 2026 — PANEL DE CONTROL</h1>
+    <div class="controls-right">
+      <span class="sync-status" id="sync-status">Cargando datos...</span>
+      <input type="password" class="search-input" id="gh-token-input" placeholder="GitHub Token" style="width:160px;" autocomplete="off" />
+      <button class="btn-save" id="btn-save" disabled>
+        <div class="loading-spinner"></div>
+        <span>Guardar Cambios</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="filter-bar">
+    <input type="text" class="search-input" id="search-box" placeholder="Buscar por país contendiente..." />
+    <select class="phase-select" id="phase-filter">
+      <option value="ALL">Todas las fases del torneo</option>
+      <option value="Fase de grupos">Fase de grupos</option>
+      <option value="Dieciseisavos de final">Dieciseisavos de final</option>
+      <option value="Octavos de final">Octavos de final</option>
+      <option value="Cuartos de final">Cuartos de final</option>
+      <option value="Semifinal">Semifinal</option>
+      <option value="Final">Final</option>
+      <option value="Partido por el tercer puesto">Tercer puesto</option>
+    </select>
+  </div>
+
+  <main class="wrapper">
+    <table class="matches-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Detalles del Partido</th>
+          <th style="text-align: center;">Enfrentamiento y Marcador</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody id="matches-tbody">
+      </tbody>
+    </table>
+  </main>
+
+  <div class="toast" id="toast-alert"></div>
+
+<script>
+  /* ================================================================
+     MUNDIAL 2026 — admin.html (Versión GitHub Pages / Estático)
+     Persistencia 100% client-side vía GitHub Contents API (REST v3)
+     ================================================================
+
+     CONFIGURACIÓN OBLIGATORIA:
+     Reemplaza las cuatro constantes de abajo con los valores reales
+     de tu repositorio antes de desplegar.
+
+     GITHUB_TOKEN  → Personal Access Token con scope "repo" (o "public_repo").
+                     IMPORTANTE: Este token queda expuesto en el código
+                     fuente del navegador. Úsalo SOLO en repositorios
+                     privados o genera un token de scope mínimo y
+                     rota regularmente.
+
+     REPO_OWNER    → Nombre de usuario u organización de GitHub.
+     REPO_NAME     → Nombre exacto del repositorio.
+     FILE_PATH     → Ruta relativa al archivo dentro del repo
+                     (p. ej. "data.json" si está en la raíz, o
+                     "src/data/data.json" para rutas anidadas).
+  ================================================================ */
+
+  let GITHUB_TOKEN = localStorage.getItem('gh_token') || '';
+  const REPO_OWNER   = 'hdcastillo-Pais';    // ← PROPIETARIO DEL REPO
+  const REPO_NAME    = 'Mundial-el-pais-v-2';  // ← NOMBRE DEL REPO
+  const FILE_PATH    = 'data.json';     // ← RUTA DEL ARCHIVO EN EL REPO
+
+  /* ── URL base de la API de contenidos de GitHub ── */
+  const GITHUB_API_URL = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`;
+
+  /* ── Estado en memoria ── */
+  let DATA = {};
+  let TEAM_INDEX = {};
+
+  const tbody       = document.getElementById('matches-tbody');
+  const saveBtn     = document.getElementById('btn-save');
+  const syncStatus  = document.getElementById('sync-status');
+  const searchBox   = document.getElementById('search-box');
+  const phaseFilter = document.getElementById('phase-filter');
+  const toast       = document.getElementById('toast-alert');
+  const tokenInput  = document.getElementById('gh-token-input');
+
+  tokenInput.value = GITHUB_TOKEN;
+  tokenInput.addEventListener('input', () => {
+    GITHUB_TOKEN = tokenInput.value.trim();
+    if (GITHUB_TOKEN) {
+      localStorage.setItem('gh_token', GITHUB_TOKEN);
+    } else {
+      localStorage.removeItem('gh_token');
+    }
+  });
+
+  /* ── Fases que admiten prórroga y penales ── */
+  const FASES_ELIMINATORIAS = new Set([
+    'Dieciseisavos de final',
+    'Octavos de final',
+    'Cuartos de final',
+    'Semifinal',
+    'Partido por el tercer puesto',
+    'Final'
+  ]);
+
+  /* ================================================================
+     CARGA INICIAL
+  ================================================================ */
+  fetch('data.json?_=' + Date.now())
+    .then(r => {
+      if (!r.ok) throw new Error('No se pudo leer data.json (' + r.status + ')');
+      return r.json();
+    })
+    .then(json => {
+      DATA = json;
+      buildTeamIndex();
+      renderMatches();
+      saveBtn.disabled = false;
+      syncStatus.textContent = 'Datos sincronizados ✓';
+    })
+    .catch(err => {
+      showToast('Error de carga: ' + err.message, 'error');
+      syncStatus.textContent = 'Fallo de carga';
+    });
+
+  /* ================================================================
+     buildTeamIndex
+  ================================================================ */
+  function buildTeamIndex() {
+    TEAM_INDEX = {};
+    if (!DATA.standings) return;
+    Object.keys(DATA.standings).forEach(gLetter => {
+      DATA.standings[gLetter].forEach(team => {
+        TEAM_INDEX[team.nombre] = {
+          id:       team.id,
+          nombre:   team.nombre,
+          codeFifa: team.codeFifa,
+          codeIso:  team.codeIso,
+          urlFlag:  team.urlFlag
+        };
+      });
+    });
+  }
+
+  /* ================================================================
+     renderMatches
+  ================================================================ */
+  function renderMatches() {
+    if (!DATA.matches) return;
+    tbody.innerHTML = '';
+
+    const filterText  = searchBox.value.trim().toLowerCase();
+    const filterPhase = phaseFilter.value;
+
+    const sortedMatches = Object.values(DATA.matches)
+      .sort((a, b) => a.id.localeCompare(b.id));
+
+    sortedMatches.forEach(m => {
+      const nameL = m.local.nombre    || 'Por Asignar';
+      const nameV = m.visitante.nombre || 'Por Asignar';
+
+      if (filterPhase !== 'ALL' && m.fase !== filterPhase) return;
+      if (filterText && !nameL.toLowerCase().includes(filterText) && !nameV.toLowerCase().includes(filterText)) return;
+
+      const tr = document.createElement('tr');
+      tr.className = 'match-row';
+      tr.dataset.id = m.id;
+
+      const isFaseAvanzada = FASES_ELIMINATORIAS.has(m.fase);
+
+      /* ── Valores actuales de prórroga y penales (si existen en DATA) ── */
+      const prL = (m.golesProrroga?.local     !== null && m.golesProrroga?.local     !== undefined) ? m.golesProrroga.local     : '';
+      const prV = (m.golesProrroga?.visitante !== null && m.golesProrroga?.visitante !== undefined) ? m.golesProrroga.visitante : '';
+      const peL = (m.penales?.local           !== null && m.penales?.local           !== undefined) ? m.penales.local           : '';
+      const peV = (m.penales?.visitante       !== null && m.penales?.visitante       !== undefined) ? m.penales.visitante       : '';
+
+      tr.innerHTML = `
+        <td class="cell-id">${m.id}</td>
+        <td class="cell-meta">
+          <div class="phase">${m.fase}${m.grupo ? ` • Gr. ${m.grupo}` : ''}</div>
+          <div class="datetime">${m.fecha} @ ${m.hora}</div>
+        </td>
+        <td>
+          <div class="matchup-container">
+            <div class="team-block local">
+              ${isFaseAvanzada
+                ? buildTeamSelectHTML('local', nameL)
+                : `<span class="team-name-label">${nameL}</span>`}
+              <img class="team-flag img-local" src="${m.local.urlFlag}" alt=""
+                   onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg'" />
+            </div>
+
+            <input type="number" min="0" class="score-input goles-local"
+              value="${m.local.goles !== null && m.local.goles !== undefined ? m.local.goles : ''}" placeholder="-" />
+
+            <div class="vs-divider">vs</div>
+
+            <input type="number" min="0" class="score-input goles-visitante"
+              value="${m.visitante.goles !== null && m.visitante.goles !== undefined ? m.visitante.goles : ''}" placeholder="-" />
+
+            <div class="team-block visitante">
+              <img class="team-flag img-visitante" src="${m.visitante.urlFlag}" alt=""
+                   onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg'" />
+              ${isFaseAvanzada
+                ? buildTeamSelectHTML('visitante', nameV)
+                : `<span class="team-name-label">${nameV}</span>`}
+            </div>
+          </div>
+
+          ${isFaseAvanzada ? `
+          <div class="knockout-extra hidden">
+            <p class="knockout-extra-title">⏱ Prórroga / Penales</p>
+            <div class="extra-row">
+              <span class="extra-label">Prórroga</span>
+              <input type="number" min="0" class="score-input sm score-prorroga-local"
+                value="${prL}" placeholder="-" />
+              <span class="vs-divider">–</span>
+              <input type="number" min="0" class="score-input sm score-prorroga-visitante"
+                value="${prV}" placeholder="-" />
+            </div>
+            <div class="extra-row">
+              <span class="extra-label">Penales</span>
+              <input type="number" min="0" class="score-input sm score-penales-local"
+                value="${peL}" placeholder="-" />
+              <span class="vs-divider">–</span>
+              <input type="number" min="0" class="score-input sm score-penales-visitante"
+                value="${peV}" placeholder="-" />
+            </div>
+            <div class="knockout-warning hidden">
+              ⚠️ Partido empatado — registra los penales para definir quién avanza
+            </div>
+          </div>
+          ` : ''}
+        </td>
+        <td class="cell-status">
+          <select class="status-select" data-state="${m.estado}">
+            <option value="Programado"  ${m.estado === 'Programado'  ? 'selected' : ''}>Programado</option>
+            <option value="En Juego"    ${m.estado === 'En Juego'    ? 'selected' : ''}>En Juego</option>
+            <option value="Finalizado"  ${m.estado === 'Finalizado'  ? 'selected' : ''}>Finalizado</option>
+            <option value="Suspendido"  ${m.estado === 'Suspendido'  ? 'selected' : ''}>Suspendido</option>
+            <option value="Cancelado"   ${m.estado === 'Cancelado'   ? 'selected' : ''}>Cancelado</option>
+          </select>
+        </td>
+      `;
+
+      /* ── Listener: colorear selector de estado ── */
+      const statusSel = tr.querySelector('.status-select');
+      statusSel.addEventListener('change', e => {
+        statusSel.setAttribute('data-state', e.target.value);
+        if (isFaseAvanzada) updateKnockoutExtra(tr);
+      });
+
+      /* ── Listeners: combos de equipo en fases avanzadas ── */
+      if (isFaseAvanzada) {
+        ['local', 'visitante'].forEach(side => {
+          const select = tr.querySelector(`.team-select-${side}`);
+          if (select) {
+            select.addEventListener('change', e => {
+              const selectedName = e.target.value;
+              const img = tr.querySelector(`.img-${side}`);
+              if (selectedName === 'Por Asignar') {
+                img.src = 'https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg';
+              } else if (TEAM_INDEX[selectedName]) {
+                img.src = TEAM_INDEX[selectedName].urlFlag;
+              }
+            });
+          }
+        });
+
+        /* ── Listeners: goles regulares → recalcular visibilidad extra ── */
+        tr.querySelector('.goles-local').addEventListener('input', () => updateKnockoutExtra(tr));
+        tr.querySelector('.goles-visitante').addEventListener('input', () => updateKnockoutExtra(tr));
+
+        /* ── Listener: penales → recalcular advertencia ── */
+        const extraDiv = tr.querySelector('.knockout-extra');
+        if (extraDiv) {
+          extraDiv.querySelectorAll('.score-input').forEach(inp => {
+            inp.addEventListener('input', () => updateKnockoutWarning(tr));
+          });
+        }
+
+        /* ── Evaluación inicial (para partidos ya finalizados con empate) ── */
+        updateKnockoutExtra(tr);
+      }
+
+      tbody.appendChild(tr);
+    });
+  }
+
+  /* ================================================================
+     updateKnockoutExtra
+     Muestra u oculta la sección de prórroga/penales según el estado
+     actual del formulario:
+       → visible si: Finalizado + empate en goles regulares
+       → visible si: ya hay datos de prórroga/penales guardados
+     ================================================================ */
+  function updateKnockoutExtra(tr) {
+    const extraDiv = tr.querySelector('.knockout-extra');
+    if (!extraDiv) return;
+
+    const estado = tr.querySelector('.status-select').value;
+    const glVal  = tr.querySelector('.goles-local').value;
+    const gvVal  = tr.querySelector('.goles-visitante').value;
+
+    const glNum = glVal !== '' ? parseInt(glVal, 10) : null;
+    const gvNum = gvVal !== '' ? parseInt(gvVal, 10) : null;
+
+    const esFinalizado = estado === 'Finalizado';
+    const esEmpate     = glNum !== null && gvNum !== null && glNum === gvNum;
+
+    /* También mostrar si ya hay datos de prórroga/penales guardados */
+    const id = tr.dataset.id;
+    const orig = DATA.matches[id] || {};
+    const tieneDataExtra =
+      (orig.golesProrroga?.local     !== null && orig.golesProrroga?.local     !== undefined) ||
+      (orig.golesProrroga?.visitante !== null && orig.golesProrroga?.visitante !== undefined) ||
+      (orig.penales?.local           !== null && orig.penales?.local           !== undefined) ||
+      (orig.penales?.visitante       !== null && orig.penales?.visitante       !== undefined);
+
+    const mostrar = esFinalizado && (esEmpate || tieneDataExtra);
+    extraDiv.classList.toggle('hidden', !mostrar);
+
+    updateKnockoutWarning(tr);
+  }
+
+  /* ================================================================
+     updateKnockoutWarning
+     Muestra la advertencia si el partido está finalizado en empate
+     pero los penales no están completos.
+     ================================================================ */
+  function updateKnockoutWarning(tr) {
+    const extraDiv = tr.querySelector('.knockout-extra');
+    if (!extraDiv || extraDiv.classList.contains('hidden')) return;
+
+    const warnDiv = extraDiv.querySelector('.knockout-warning');
+    if (!warnDiv) return;
+
+    const estado = tr.querySelector('.status-select').value;
+    const glVal  = tr.querySelector('.goles-local').value;
+    const gvVal  = tr.querySelector('.goles-visitante').value;
+    const glNum  = glVal !== '' ? parseInt(glVal, 10) : null;
+    const gvNum  = gvVal !== '' ? parseInt(gvVal, 10) : null;
+
+    const esEmpate     = glNum !== null && gvNum !== null && glNum === gvNum;
+    const esFinalizado = estado === 'Finalizado';
+
+    const peL = extraDiv.querySelector('.score-penales-local').value;
+    const peV = extraDiv.querySelector('.score-penales-visitante').value;
+    const penalesIncompletos = peL === '' || peV === '';
+
+    warnDiv.classList.toggle('hidden', !(esFinalizado && esEmpate && penalesIncompletos));
+  }
+
+  /* ================================================================
+     buildTeamSelectHTML
+  ================================================================ */
+  function buildTeamSelectHTML(side, currentSelection) {
+    let html = `<select class="team-select-combo team-select-${side}">`;
+    html += `<option value="Por Asignar" ${currentSelection === 'Por Asignar' ? 'selected' : ''}>Por Asignar</option>`;
+    Object.keys(TEAM_INDEX).sort().forEach(name => {
+      html += `<option value="${name}" ${currentSelection === name ? 'selected' : ''}>${name}</option>`;
+    });
+    html += `</select>`;
+    return html;
+  }
+
+  /* ── Listeners de filtros ── */
+  searchBox.addEventListener('input', renderMatches);
+  phaseFilter.addEventListener('change', renderMatches);
+
+  /* ================================================================
+     collectPayload
+     Recorre todas las filas visibles y construye el objeto "matches"
+     que se fusionará con DATA para formar el JSON a persistir.
+     Incluye golesProrroga y penales para fases eliminatorias.
+  ================================================================ */
+  function collectPayload() {
+    const matches = {};
+
+    document.querySelectorAll('.match-row').forEach(row => {
+      const id     = row.dataset.id;
+      const estado = row.querySelector('.status-select').value;
+
+      const glVal = row.querySelector('.goles-local').value;
+      const gvVal = row.querySelector('.goles-visitante').value;
+
+      const golesLocal     = glVal === '' ? null : parseInt(glVal, 10);
+      const golesVisitante = gvVal === '' ? null : parseInt(gvVal, 10);
+
+      /* ── Prórroga y penales (solo fases eliminatorias) ── */
+      let golesProrroga = null;
+      let penales       = null;
+
+      const extraDiv = row.querySelector('.knockout-extra');
+      if (extraDiv) {
+        const prL = row.querySelector('.score-prorroga-local')?.value    ?? '';
+        const prV = row.querySelector('.score-prorroga-visitante')?.value ?? '';
+        const peL = row.querySelector('.score-penales-local')?.value      ?? '';
+        const peV = row.querySelector('.score-penales-visitante')?.value  ?? '';
+
+        golesProrroga = {
+          local:     prL !== '' ? parseInt(prL, 10) : null,
+          visitante: prV !== '' ? parseInt(prV, 10) : null
+        };
+        penales = {
+          local:     peL !== '' ? parseInt(peL, 10) : null,
+          visitante: peV !== '' ? parseInt(peV, 10) : null
+        };
+      }
+
+      const localSelect     = row.querySelector('.team-select-local');
+      const visitanteSelect = row.querySelector('.team-select-visitante');
+
+      let local     = {};
+      let visitante = {};
+
+      if (localSelect) {
+        const tName = localSelect.value;
+        if (tName === 'Por Asignar') {
+          local = { nombre: 'Por Asignar', id: 'team-tbd', codeFifa: 'TBD', codeIso: '', urlFlag: 'https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg' };
+        } else {
+          const eq = TEAM_INDEX[tName];
+          local = { nombre: tName, id: eq.id, codeFifa: eq.codeFifa, codeIso: eq.codeIso, urlFlag: eq.urlFlag };
+        }
+      } else {
+        const orig = DATA.matches[id].local;
+        local = { nombre: orig.nombre, id: orig.id || 'team-tbd', codeFifa: orig.codeFifa, codeIso: orig.codeIso, urlFlag: orig.urlFlag };
+      }
+
+      if (visitanteSelect) {
+        const tName = visitanteSelect.value;
+        if (tName === 'Por Asignar') {
+          visitante = { nombre: 'Por Asignar', id: 'team-tbd', codeFifa: 'TBD', codeIso: '', urlFlag: 'https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg' };
+        } else {
+          const eq = TEAM_INDEX[tName];
+          visitante = { nombre: tName, id: eq.id, codeFifa: eq.codeFifa, codeIso: eq.codeIso, urlFlag: eq.urlFlag };
+        }
+      } else {
+        const orig = DATA.matches[id].visitante;
+        visitante = { nombre: orig.nombre, id: orig.id || 'team-tbd', codeFifa: orig.codeFifa, codeIso: orig.codeIso, urlFlag: orig.urlFlag };
+      }
+
+      const matchData = {
+        id,
+        estado,
+        local:    { ...local,    goles: golesLocal },
+        visitante: { ...visitante, goles: golesVisitante }
+      };
+
+      if (golesProrroga !== null) matchData.golesProrroga = golesProrroga;
+      if (penales       !== null) matchData.penales       = penales;
+
+      matches[id] = matchData;
+    });
+
+    return matches;
+  }
+
+  /* ================================================================
+     recalcularStandings
+  ================================================================ */
+  function recalcularStandings(db) {
+    if (!db.standings || !db.matches) return db;
+
+    const indice = {};
+    Object.keys(db.standings).forEach(grupoKey => {
+      db.standings[grupoKey].forEach((eq, idx) => {
+        db.standings[grupoKey][idx] = {
+          ...eq,
+          pj: 0, pg: 0, pe: 0, pp: 0,
+          gf: 0, gc: 0, dg: 0, pts: 0
+        };
+        indice[eq.nombre] = [grupoKey, idx];
+      });
+    });
+
+    Object.values(db.matches).forEach(match => {
+      if (match.fase !== 'Fase de grupos') return;
+      if (match.estado !== 'Finalizado')   return;
+
+      const gL = match.local.goles;
+      const gV = match.visitante.goles;
+      if (gL === null || gV === null) return;
+
+      const nL = match.local.nombre;
+      const nV = match.visitante.nombre;
+      if (!indice[nL] || !indice[nV]) return;
+
+      const [grpL, idxL] = indice[nL];
+      const [grpV, idxV] = indice[nV];
+      const eqL = db.standings[grpL][idxL];
+      const eqV = db.standings[grpV][idxV];
+
+      eqL.pj++; eqV.pj++;
+      eqL.gf += gL; eqL.gc += gV;
+      eqV.gf += gV; eqV.gc += gL;
+
+      if (gL > gV) {
+        eqL.pg++; eqL.pts += 3; eqV.pp++;
+      } else if (gV > gL) {
+        eqV.pg++; eqV.pts += 3; eqL.pp++;
+      } else {
+        eqL.pe++; eqL.pts += 1;
+        eqV.pe++; eqV.pts += 1;
+      }
+
+      eqL.dg = eqL.gf - eqL.gc;
+      eqV.dg = eqV.gf - eqV.gc;
+    });
+
+    Object.keys(db.standings).forEach(grupoKey => {
+      db.standings[grupoKey].sort((a, b) => {
+        if (b.pts !== a.pts) return b.pts - a.pts;
+        if (b.dg  !== a.dg)  return b.dg  - a.dg;
+        return b.gf - a.gf;
+      });
+    });
+
+    return db;
+  }
+
+  /* ================================================================
+     GUARDADO VÍA GITHUB CONTENTS API
+  ================================================================ */
+  saveBtn.addEventListener('click', async () => {
+
+    /* ── Validación: empates sin resolución en fases eliminatorias ── */
+    const empatesSinResolver = [];
+    document.querySelectorAll('.match-row').forEach(row => {
+      const id     = row.dataset.id;
+      const match  = DATA.matches[id];
+      if (!match || !FASES_ELIMINATORIAS.has(match.fase)) return;
+
+      const estado = row.querySelector('.status-select').value;
+      if (estado !== 'Finalizado') return;
+
+      const glVal  = row.querySelector('.goles-local').value;
+      const gvVal  = row.querySelector('.goles-visitante').value;
+      const glNum  = glVal !== '' ? parseInt(glVal, 10) : null;
+      const gvNum  = gvVal !== '' ? parseInt(gvVal, 10) : null;
+
+      if (glNum === null || gvNum === null || glNum !== gvNum) return;
+
+      const extraDiv = row.querySelector('.knockout-extra');
+      const peL = extraDiv?.querySelector('.score-penales-local')?.value  ?? '';
+      const peV = extraDiv?.querySelector('.score-penales-visitante')?.value ?? '';
+
+      if (peL === '' || peV === '') {
+        empatesSinResolver.push(id);
+      }
+    });
+
+    if (empatesSinResolver.length > 0) {
+      const continuar = window.confirm(
+        `⚠️ Los siguientes partidos están marcados como "Finalizado" con empate pero sin penales registrados:\n\n` +
+        empatesSinResolver.join(', ') +
+        `\n\n¿Deseas guardar de todas formas?`
+      );
+      if (!continuar) return;
+    }
+
+    if (!GITHUB_TOKEN) {
+      showToast('Ingresa tu GitHub Token antes de guardar.', 'error');
+      return;
+    }
+
+    saveBtn.classList.add('loading');
+    saveBtn.disabled = true;
+    syncStatus.textContent = 'Guardando en GitHub...';
+
+    try {
+      /* ── PASO 1: Obtener el SHA vigente del archivo ── */
+      const getResponse = await fetch(GITHUB_API_URL, {
+        headers: {
+          'Authorization': `Bearer ${GITHUB_TOKEN}`,
+          'Accept':        'application/vnd.github+json',
+          'X-GitHub-Api-Version': '2022-11-28'
+        }
+      });
+
+      if (!getResponse.ok) {
+        const errBody = await getResponse.json().catch(() => ({}));
+        throw new Error(`GET SHA falló (${getResponse.status}): ${errBody.message || getResponse.statusText}`);
+      }
+
+      const fileInfo   = await getResponse.json();
+      const currentSha = fileInfo.sha;
+
+      /* ── PASO 2: Fusionar cambios del editor en DATA ── */
+      const updatedMatches = collectPayload();
+
+      Object.keys(updatedMatches).forEach(id => {
+        if (!DATA.matches[id]) return;
+        const edited = updatedMatches[id];
+
+        DATA.matches[id].estado            = edited.estado;
+        DATA.matches[id].local.nombre      = edited.local.nombre;
+        DATA.matches[id].local.id          = edited.local.id;
+        DATA.matches[id].local.codeFifa    = edited.local.codeFifa;
+        DATA.matches[id].local.codeIso     = edited.local.codeIso;
+        DATA.matches[id].local.urlFlag     = edited.local.urlFlag;
+        DATA.matches[id].local.goles       = edited.local.goles;
+        DATA.matches[id].visitante.nombre  = edited.visitante.nombre;
+        DATA.matches[id].visitante.id      = edited.visitante.id;
+        DATA.matches[id].visitante.codeFifa = edited.visitante.codeFifa;
+        DATA.matches[id].visitante.codeIso  = edited.visitante.codeIso;
+        DATA.matches[id].visitante.urlFlag  = edited.visitante.urlFlag;
+        DATA.matches[id].visitante.goles    = edited.visitante.goles;
+
+        /* ── Prórroga y penales ── */
+        if (edited.golesProrroga !== undefined) {
+          DATA.matches[id].golesProrroga = edited.golesProrroga;
+        }
+        if (edited.penales !== undefined) {
+          DATA.matches[id].penales = edited.penales;
+        }
+      });
+
+      DATA = recalcularStandings(DATA);
+      DATA.lastUpdated = Date.now();
+
+      /* ── PASO 3: Serializar a JSON y codificar en Base64 UTF-8 ── */
+      const jsonString   = JSON.stringify(DATA, null, 2);
+      const utf8Bytes    = new TextEncoder().encode(jsonString);
+      const binaryString = Array.from(utf8Bytes)
+        .map(byte => String.fromCharCode(byte))
+        .join('');
+      const base64Content = btoa(binaryString);
+
+      /* ── PASO 4: PUT a la API de GitHub ── */
+      const commitMessage = `chore: actualizar marcadores Mundial 2026 — ${new Date().toLocaleString('es-CO')}`;
+
+      const putResponse = await fetch(GITHUB_API_URL, {
+        method: 'PUT',
+        headers: {
+          'Authorization':        `Bearer ${GITHUB_TOKEN}`,
+          'Accept':               'application/vnd.github+json',
+          'Content-Type':         'application/json',
+          'X-GitHub-Api-Version': '2022-11-28'
+        },
+        body: JSON.stringify({
+          message: commitMessage,
+          content: base64Content,
+          sha:     currentSha
+        })
+      });
+
+      if (!putResponse.ok) {
+        const errBody = await putResponse.json().catch(() => ({}));
+        throw new Error(`PUT GitHub falló (${putResponse.status}): ${errBody.message || putResponse.statusText}`);
+      }
+
+      showToast('¡Cambios guardados y posiciones sincronizadas en GitHub!', 'success');
+      syncStatus.textContent = 'Guardado: ' + new Date().toLocaleTimeString('es-CO');
+
+      buildTeamIndex();
+      renderMatches();
+
+    } catch (err) {
+      showToast('Error al guardar: ' + err.message, 'error');
+      syncStatus.textContent = 'Error de guardado ✗';
+      console.error('[GitHub API Error]', err);
+    } finally {
+      saveBtn.classList.remove('loading');
+      saveBtn.disabled = false;
+    }
+  });
+
+  /* ── Utilidad de notificaciones ── */
+  function showToast(msg, type) {
+    toast.className = `toast show ${type}`;
+    toast.textContent = msg;
+    setTimeout(() => { toast.classList.remove('show'); }, 4000);
+  }
+</script>
+</body>
+</html>

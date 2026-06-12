@@ -1,0 +1,3657 @@
+{
+  "matches": {
+    "match-001": {
+      "id": "match-001",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "A",
+      "fecha": "2026-06-11",
+      "hora": "14:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "México",
+        "codeFifa": "MEX",
+        "codeIso": "MX",
+        "urlFlag": "https://flagcdn.com/mx.svg",
+        "goles": null,
+        "id": "team-032"
+      },
+      "visitante": {
+        "nombre": "Sudáfrica",
+        "codeFifa": "RSA",
+        "codeIso": "ZA",
+        "urlFlag": "https://flagcdn.com/za.svg",
+        "goles": null,
+        "id": "team-042"
+      }
+    },
+    "match-002": {
+      "id": "match-002",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "A",
+      "fecha": "2026-06-11",
+      "hora": "21:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Corea del Sur",
+        "codeFifa": "KOR",
+        "codeIso": "KR",
+        "urlFlag": "https://flagcdn.com/kr.svg",
+        "goles": null,
+        "id": "team-014"
+      },
+      "visitante": {
+        "nombre": "República Checa",
+        "codeFifa": "CZE",
+        "codeIso": "CZ",
+        "urlFlag": "https://flagcdn.com/cz.svg",
+        "goles": null,
+        "id": "team-040"
+      }
+    },
+    "match-003": {
+      "id": "match-003",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "B",
+      "fecha": "2026-06-12",
+      "hora": "14:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Canadá",
+        "codeFifa": "CAN",
+        "codeIso": "CA",
+        "urlFlag": "https://flagcdn.com/ca.svg",
+        "goles": null,
+        "id": "team-011"
+      },
+      "visitante": {
+        "nombre": "Bosnia y Herzegovina",
+        "codeFifa": "BIH",
+        "codeIso": "BA",
+        "urlFlag": "https://flagcdn.com/ba.svg",
+        "goles": null,
+        "id": "team-008"
+      }
+    },
+    "match-004": {
+      "id": "match-004",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "D",
+      "fecha": "2026-06-12",
+      "hora": "20:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Estados Unidos",
+        "codeFifa": "USA",
+        "codeIso": "US",
+        "urlFlag": "https://flagcdn.com/us.svg",
+        "goles": null,
+        "id": "team-022"
+      },
+      "visitante": {
+        "nombre": "Paraguay",
+        "codeFifa": "PAR",
+        "codeIso": "PY",
+        "urlFlag": "https://flagcdn.com/py.svg",
+        "goles": null,
+        "id": "team-037"
+      }
+    },
+    "match-005": {
+      "id": "match-005",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "B",
+      "fecha": "2026-06-13",
+      "hora": "14:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Catar",
+        "codeFifa": "QAT",
+        "codeIso": "QA",
+        "urlFlag": "https://flagcdn.com/qa.svg",
+        "goles": null,
+        "id": "team-012"
+      },
+      "visitante": {
+        "nombre": "Suiza",
+        "codeFifa": "SUI",
+        "codeIso": "CH",
+        "urlFlag": "https://flagcdn.com/ch.svg",
+        "goles": null,
+        "id": "team-044"
+      }
+    },
+    "match-006": {
+      "id": "match-006",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "C",
+      "fecha": "2026-06-13",
+      "hora": "17:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Brasil",
+        "codeFifa": "BRA",
+        "codeIso": "BR",
+        "urlFlag": "https://flagcdn.com/br.svg",
+        "goles": null,
+        "id": "team-009"
+      },
+      "visitante": {
+        "nombre": "Marruecos",
+        "codeFifa": "MAR",
+        "codeIso": "MA",
+        "urlFlag": "https://flagcdn.com/ma.svg",
+        "goles": null,
+        "id": "team-031"
+      }
+    },
+    "match-007": {
+      "id": "match-007",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "C",
+      "fecha": "2026-06-13",
+      "hora": "20:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Haití",
+        "codeFifa": "HAI",
+        "codeIso": "HT",
+        "urlFlag": "https://flagcdn.com/ht.svg",
+        "goles": null,
+        "id": "team-025"
+      },
+      "visitante": {
+        "nombre": "Escocia",
+        "codeFifa": "SCO",
+        "codeIso": "SC",
+        "urlFlag": "https://flagcdn.com/gb-sct.svg",
+        "goles": null,
+        "id": "team-020"
+      }
+    },
+    "match-008": {
+      "id": "match-008",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "D",
+      "fecha": "2026-06-13",
+      "hora": "23:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Australia",
+        "codeFifa": "AUS",
+        "codeIso": "AU",
+        "urlFlag": "https://flagcdn.com/au.svg",
+        "goles": null,
+        "id": "team-005"
+      },
+      "visitante": {
+        "nombre": "Turquía",
+        "codeFifa": "TUR",
+        "codeIso": "TR",
+        "urlFlag": "https://flagcdn.com/tr.svg",
+        "goles": null,
+        "id": "team-046"
+      }
+    },
+    "match-009": {
+      "id": "match-009",
+      "fase": "Fase de grupos",
+      "estado": "En Juego",
+      "grupo": "E",
+      "fecha": "2026-06-14",
+      "hora": "12:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Alemania",
+        "codeFifa": "GER",
+        "codeIso": "DE",
+        "urlFlag": "https://flagcdn.com/de.svg",
+        "goles": 0,
+        "id": "team-001"
+      },
+      "visitante": {
+        "nombre": "Curazao",
+        "codeFifa": "CUW",
+        "codeIso": "CW",
+        "urlFlag": "https://flagcdn.com/cw.svg",
+        "goles": 2,
+        "id": "team-017"
+      }
+    },
+    "match-010": {
+      "id": "match-010",
+      "fase": "Fase de grupos",
+      "estado": "Finalizado",
+      "grupo": "F",
+      "fecha": "2026-06-14",
+      "hora": "15:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Países Bajos",
+        "codeFifa": "NED",
+        "codeIso": "NL",
+        "urlFlag": "https://flagcdn.com/nl.svg",
+        "goles": 1,
+        "id": "team-035"
+      },
+      "visitante": {
+        "nombre": "Japón",
+        "codeFifa": "JPN",
+        "codeIso": "JP",
+        "urlFlag": "https://flagcdn.com/jp.svg",
+        "goles": 3,
+        "id": "team-029"
+      }
+    },
+    "match-011": {
+      "id": "match-011",
+      "fase": "Fase de grupos",
+      "estado": "Finalizado",
+      "grupo": "E",
+      "fecha": "2026-06-14",
+      "hora": "18:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Costa de Marfil",
+        "codeFifa": "CIV",
+        "codeIso": "CI",
+        "urlFlag": "https://flagcdn.com/ci.svg",
+        "goles": 2,
+        "id": "team-015"
+      },
+      "visitante": {
+        "nombre": "Ecuador",
+        "codeFifa": "ECU",
+        "codeIso": "EC",
+        "urlFlag": "https://flagcdn.com/ec.svg",
+        "goles": 1,
+        "id": "team-018"
+      }
+    },
+    "match-012": {
+      "id": "match-012",
+      "fase": "Fase de grupos",
+      "estado": "Finalizado",
+      "grupo": "F",
+      "fecha": "2026-06-14",
+      "hora": "21:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Suecia",
+        "codeFifa": "SWE",
+        "codeIso": "SE",
+        "urlFlag": "https://flagcdn.com/se.svg",
+        "goles": 3,
+        "id": "team-043"
+      },
+      "visitante": {
+        "nombre": "Túnez",
+        "codeFifa": "TUN",
+        "codeIso": "TN",
+        "urlFlag": "https://flagcdn.com/tn.svg",
+        "goles": 0,
+        "id": "team-045"
+      }
+    },
+    "match-013": {
+      "id": "match-013",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "H",
+      "fecha": "2026-06-15",
+      "hora": "11:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "España",
+        "codeFifa": "ESP",
+        "codeIso": "ES",
+        "urlFlag": "https://flagcdn.com/es.svg",
+        "goles": null,
+        "id": "team-021"
+      },
+      "visitante": {
+        "nombre": "Cabo Verde",
+        "codeFifa": "CPV",
+        "codeIso": "CV",
+        "urlFlag": "https://flagcdn.com/cv.svg",
+        "goles": null,
+        "id": "team-010"
+      }
+    },
+    "match-014": {
+      "id": "match-014",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "G",
+      "fecha": "2026-06-15",
+      "hora": "14:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Bélgica",
+        "codeFifa": "BEL",
+        "codeIso": "BE",
+        "urlFlag": "https://flagcdn.com/be.svg",
+        "goles": null,
+        "id": "team-007"
+      },
+      "visitante": {
+        "nombre": "Egipto",
+        "codeFifa": "EGY",
+        "codeIso": "EG",
+        "urlFlag": "https://flagcdn.com/eg.svg",
+        "goles": null,
+        "id": "team-019"
+      }
+    },
+    "match-015": {
+      "id": "match-015",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "H",
+      "fecha": "2026-06-15",
+      "hora": "17:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Arabia Saudita",
+        "codeFifa": "SAU",
+        "codeIso": "SA",
+        "urlFlag": "https://flagcdn.com/sa.svg",
+        "goles": null,
+        "id": "team-002"
+      },
+      "visitante": {
+        "nombre": "Uruguay",
+        "codeFifa": "URU",
+        "codeIso": "UY",
+        "urlFlag": "https://flagcdn.com/uy.svg",
+        "goles": null,
+        "id": "team-047"
+      }
+    },
+    "match-016": {
+      "id": "match-016",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "G",
+      "fecha": "2026-06-15",
+      "hora": "20:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Irán",
+        "codeFifa": "IRN",
+        "codeIso": "IR",
+        "urlFlag": "https://flagcdn.com/ir.svg",
+        "goles": null,
+        "id": "team-028"
+      },
+      "visitante": {
+        "nombre": "Nueva Zelanda",
+        "codeFifa": "NZL",
+        "codeIso": "NZ",
+        "urlFlag": "https://flagcdn.com/nz.svg",
+        "goles": null,
+        "id": "team-034"
+      }
+    },
+    "match-017": {
+      "id": "match-017",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "I",
+      "fecha": "2026-06-16",
+      "hora": "14:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Francia",
+        "codeFifa": "FRA",
+        "codeIso": "FR",
+        "urlFlag": "https://flagcdn.com/fr.svg",
+        "goles": null,
+        "id": "team-023"
+      },
+      "visitante": {
+        "nombre": "Senegal",
+        "codeFifa": "SEN",
+        "codeIso": "SN",
+        "urlFlag": "https://flagcdn.com/sn.svg",
+        "goles": null,
+        "id": "team-041"
+      }
+    },
+    "match-018": {
+      "id": "match-018",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "I",
+      "fecha": "2026-06-16",
+      "hora": "17:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Irak",
+        "codeFifa": "IRQ",
+        "codeIso": "IQ",
+        "urlFlag": "https://flagcdn.com/iq.svg",
+        "goles": null,
+        "id": "team-027"
+      },
+      "visitante": {
+        "nombre": "Noruega",
+        "codeFifa": "NOR",
+        "codeIso": "NO",
+        "urlFlag": "https://flagcdn.com/no.svg",
+        "goles": null,
+        "id": "team-033"
+      }
+    },
+    "match-019": {
+      "id": "match-019",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "J",
+      "fecha": "2026-06-16",
+      "hora": "20:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Argentina",
+        "codeFifa": "ARG",
+        "codeIso": "AR",
+        "urlFlag": "https://flagcdn.com/ar.svg",
+        "goles": null,
+        "id": "team-004"
+      },
+      "visitante": {
+        "nombre": "Argelia",
+        "codeFifa": "ALG",
+        "codeIso": "DZ",
+        "urlFlag": "https://flagcdn.com/dz.svg",
+        "goles": null,
+        "id": "team-003"
+      }
+    },
+    "match-020": {
+      "id": "match-020",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "J",
+      "fecha": "2026-06-16",
+      "hora": "23:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Austria",
+        "codeFifa": "AUT",
+        "codeIso": "AT",
+        "urlFlag": "https://flagcdn.com/at.svg",
+        "goles": null,
+        "id": "team-006"
+      },
+      "visitante": {
+        "nombre": "Jordania",
+        "codeFifa": "JOR",
+        "codeIso": "JO",
+        "urlFlag": "https://flagcdn.com/jo.svg",
+        "goles": null,
+        "id": "team-030"
+      }
+    },
+    "match-021": {
+      "id": "match-021",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "K",
+      "fecha": "2026-06-17",
+      "hora": "12:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Portugal",
+        "codeFifa": "POR",
+        "codeIso": "PT",
+        "urlFlag": "https://flagcdn.com/pt.svg",
+        "goles": null,
+        "id": "team-038"
+      },
+      "visitante": {
+        "nombre": "RD del Congo",
+        "codeFifa": "COD",
+        "codeIso": "CD",
+        "urlFlag": "https://flagcdn.com/cd.svg",
+        "goles": null,
+        "id": "team-039"
+      }
+    },
+    "match-022": {
+      "id": "match-022",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "L",
+      "fecha": "2026-06-17",
+      "hora": "15:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Inglaterra",
+        "codeFifa": "ENG",
+        "codeIso": "EN",
+        "urlFlag": "https://flagcdn.com/gb-eng.svg",
+        "goles": null,
+        "id": "team-026"
+      },
+      "visitante": {
+        "nombre": "Croacia",
+        "codeFifa": "CRO",
+        "codeIso": "HR",
+        "urlFlag": "https://flagcdn.com/hr.svg",
+        "goles": null,
+        "id": "team-016"
+      }
+    },
+    "match-023": {
+      "id": "match-023",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "L",
+      "fecha": "2026-06-17",
+      "hora": "18:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Ghana",
+        "codeFifa": "GHA",
+        "codeIso": "GH",
+        "urlFlag": "https://flagcdn.com/gh.svg",
+        "goles": null,
+        "id": "team-024"
+      },
+      "visitante": {
+        "nombre": "Panamá",
+        "codeFifa": "PAN",
+        "codeIso": "PA",
+        "urlFlag": "https://flagcdn.com/pa.svg",
+        "goles": null,
+        "id": "team-036"
+      }
+    },
+    "match-024": {
+      "id": "match-024",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "K",
+      "fecha": "2026-06-17",
+      "hora": "21:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Uzbekistán",
+        "codeFifa": "UZB",
+        "codeIso": "UZ",
+        "urlFlag": "https://flagcdn.com/uz.svg",
+        "goles": null,
+        "id": "team-048"
+      },
+      "visitante": {
+        "nombre": "Colombia",
+        "codeFifa": "COL",
+        "codeIso": "CO",
+        "urlFlag": "https://flagcdn.com/co.svg",
+        "goles": null,
+        "id": "team-013"
+      }
+    },
+    "match-025": {
+      "id": "match-025",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "A",
+      "fecha": "2026-06-18",
+      "hora": "11:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "República Checa",
+        "codeFifa": "CZE",
+        "codeIso": "CZ",
+        "urlFlag": "https://flagcdn.com/cz.svg",
+        "goles": null,
+        "id": "team-040"
+      },
+      "visitante": {
+        "nombre": "Sudáfrica",
+        "codeFifa": "RSA",
+        "codeIso": "ZA",
+        "urlFlag": "https://flagcdn.com/za.svg",
+        "goles": null,
+        "id": "team-042"
+      }
+    },
+    "match-026": {
+      "id": "match-026",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "B",
+      "fecha": "2026-06-18",
+      "hora": "14:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Suiza",
+        "codeFifa": "SUI",
+        "codeIso": "CH",
+        "urlFlag": "https://flagcdn.com/ch.svg",
+        "goles": null,
+        "id": "team-044"
+      },
+      "visitante": {
+        "nombre": "Bosnia y Herzegovina",
+        "codeFifa": "BIH",
+        "codeIso": "BA",
+        "urlFlag": "https://flagcdn.com/ba.svg",
+        "goles": null,
+        "id": "team-008"
+      }
+    },
+    "match-027": {
+      "id": "match-027",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "B",
+      "fecha": "2026-06-18",
+      "hora": "17:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Canadá",
+        "codeFifa": "CAN",
+        "codeIso": "CA",
+        "urlFlag": "https://flagcdn.com/ca.svg",
+        "goles": null,
+        "id": "team-011"
+      },
+      "visitante": {
+        "nombre": "Catar",
+        "codeFifa": "QAT",
+        "codeIso": "QA",
+        "urlFlag": "https://flagcdn.com/qa.svg",
+        "goles": null,
+        "id": "team-012"
+      }
+    },
+    "match-028": {
+      "id": "match-028",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "A",
+      "fecha": "2026-06-18",
+      "hora": "20:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "México",
+        "codeFifa": "MEX",
+        "codeIso": "MX",
+        "urlFlag": "https://flagcdn.com/mx.svg",
+        "goles": null,
+        "id": "team-032"
+      },
+      "visitante": {
+        "nombre": "Corea del Sur",
+        "codeFifa": "KOR",
+        "codeIso": "KR",
+        "urlFlag": "https://flagcdn.com/kr.svg",
+        "goles": null,
+        "id": "team-014"
+      }
+    },
+    "match-029": {
+      "id": "match-029",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "D",
+      "fecha": "2026-06-19",
+      "hora": "14:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Estados Unidos",
+        "codeFifa": "USA",
+        "codeIso": "US",
+        "urlFlag": "https://flagcdn.com/us.svg",
+        "goles": null,
+        "id": "team-022"
+      },
+      "visitante": {
+        "nombre": "Australia",
+        "codeFifa": "AUS",
+        "codeIso": "AU",
+        "urlFlag": "https://flagcdn.com/au.svg",
+        "goles": null,
+        "id": "team-005"
+      }
+    },
+    "match-030": {
+      "id": "match-030",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "C",
+      "fecha": "2026-06-19",
+      "hora": "17:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Escocia",
+        "codeFifa": "SCO",
+        "codeIso": "SC",
+        "urlFlag": "https://flagcdn.com/gb-sct.svg",
+        "goles": null,
+        "id": "team-020"
+      },
+      "visitante": {
+        "nombre": "Marruecos",
+        "codeFifa": "MAR",
+        "codeIso": "MA",
+        "urlFlag": "https://flagcdn.com/ma.svg",
+        "goles": null,
+        "id": "team-031"
+      }
+    },
+    "match-031": {
+      "id": "match-031",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "C",
+      "fecha": "2026-06-19",
+      "hora": "20:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Brasil",
+        "codeFifa": "BRA",
+        "codeIso": "BR",
+        "urlFlag": "https://flagcdn.com/br.svg",
+        "goles": null,
+        "id": "team-009"
+      },
+      "visitante": {
+        "nombre": "Haití",
+        "codeFifa": "HAI",
+        "codeIso": "HT",
+        "urlFlag": "https://flagcdn.com/ht.svg",
+        "goles": null,
+        "id": "team-025"
+      }
+    },
+    "match-032": {
+      "id": "match-032",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "D",
+      "fecha": "2026-06-19",
+      "hora": "23:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Turquía",
+        "codeFifa": "TUR",
+        "codeIso": "TR",
+        "urlFlag": "https://flagcdn.com/tr.svg",
+        "goles": null,
+        "id": "team-046"
+      },
+      "visitante": {
+        "nombre": "Paraguay",
+        "codeFifa": "PAR",
+        "codeIso": "PY",
+        "urlFlag": "https://flagcdn.com/py.svg",
+        "goles": null,
+        "id": "team-037"
+      }
+    },
+    "match-033": {
+      "id": "match-033",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "F",
+      "fecha": "2026-06-20",
+      "hora": "12:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Países Bajos",
+        "codeFifa": "NED",
+        "codeIso": "NL",
+        "urlFlag": "https://flagcdn.com/nl.svg",
+        "goles": null,
+        "id": "team-035"
+      },
+      "visitante": {
+        "nombre": "Suecia",
+        "codeFifa": "SWE",
+        "codeIso": "SE",
+        "urlFlag": "https://flagcdn.com/se.svg",
+        "goles": null,
+        "id": "team-043"
+      }
+    },
+    "match-034": {
+      "id": "match-034",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "E",
+      "fecha": "2026-06-20",
+      "hora": "15:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Alemania",
+        "codeFifa": "GER",
+        "codeIso": "DE",
+        "urlFlag": "https://flagcdn.com/de.svg",
+        "goles": null,
+        "id": "team-001"
+      },
+      "visitante": {
+        "nombre": "Costa de Marfil",
+        "codeFifa": "CIV",
+        "codeIso": "CI",
+        "urlFlag": "https://flagcdn.com/ci.svg",
+        "goles": null,
+        "id": "team-015"
+      }
+    },
+    "match-035": {
+      "id": "match-035",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "E",
+      "fecha": "2026-06-20",
+      "hora": "19:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Ecuador",
+        "codeFifa": "ECU",
+        "codeIso": "EC",
+        "urlFlag": "https://flagcdn.com/ec.svg",
+        "goles": null,
+        "id": "team-018"
+      },
+      "visitante": {
+        "nombre": "Curazao",
+        "codeFifa": "CUW",
+        "codeIso": "CW",
+        "urlFlag": "https://flagcdn.com/cw.svg",
+        "goles": null,
+        "id": "team-017"
+      }
+    },
+    "match-036": {
+      "id": "match-036",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "F",
+      "fecha": "2026-06-20",
+      "hora": "23:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Túnez",
+        "codeFifa": "TUN",
+        "codeIso": "TN",
+        "urlFlag": "https://flagcdn.com/tn.svg",
+        "goles": null,
+        "id": "team-045"
+      },
+      "visitante": {
+        "nombre": "Japón",
+        "codeFifa": "JPN",
+        "codeIso": "JP",
+        "urlFlag": "https://flagcdn.com/jp.svg",
+        "goles": null,
+        "id": "team-029"
+      }
+    },
+    "match-037": {
+      "id": "match-037",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "H",
+      "fecha": "2026-06-21",
+      "hora": "11:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "España",
+        "codeFifa": "ESP",
+        "codeIso": "ES",
+        "urlFlag": "https://flagcdn.com/es.svg",
+        "goles": null,
+        "id": "team-021"
+      },
+      "visitante": {
+        "nombre": "Arabia Saudita",
+        "codeFifa": "SAU",
+        "codeIso": "SA",
+        "urlFlag": "https://flagcdn.com/sa.svg",
+        "goles": null,
+        "id": "team-002"
+      }
+    },
+    "match-038": {
+      "id": "match-038",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "G",
+      "fecha": "2026-06-21",
+      "hora": "14:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Bélgica",
+        "codeFifa": "BEL",
+        "codeIso": "BE",
+        "urlFlag": "https://flagcdn.com/be.svg",
+        "goles": null,
+        "id": "team-007"
+      },
+      "visitante": {
+        "nombre": "Irán",
+        "codeFifa": "IRN",
+        "codeIso": "IR",
+        "urlFlag": "https://flagcdn.com/ir.svg",
+        "goles": null,
+        "id": "team-028"
+      }
+    },
+    "match-039": {
+      "id": "match-039",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "H",
+      "fecha": "2026-06-21",
+      "hora": "17:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Uruguay",
+        "codeFifa": "URU",
+        "codeIso": "UY",
+        "urlFlag": "https://flagcdn.com/uy.svg",
+        "goles": null,
+        "id": "team-047"
+      },
+      "visitante": {
+        "nombre": "Cabo Verde",
+        "codeFifa": "CPV",
+        "codeIso": "CV",
+        "urlFlag": "https://flagcdn.com/cv.svg",
+        "goles": null,
+        "id": "team-010"
+      }
+    },
+    "match-040": {
+      "id": "match-040",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "G",
+      "fecha": "2026-06-21",
+      "hora": "20:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Nueva Zelanda",
+        "codeFifa": "NZL",
+        "codeIso": "NZ",
+        "urlFlag": "https://flagcdn.com/nz.svg",
+        "goles": null,
+        "id": "team-034"
+      },
+      "visitante": {
+        "nombre": "Egipto",
+        "codeFifa": "EGY",
+        "codeIso": "EG",
+        "urlFlag": "https://flagcdn.com/eg.svg",
+        "goles": null,
+        "id": "team-019"
+      }
+    },
+    "match-041": {
+      "id": "match-041",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "J",
+      "fecha": "2026-06-22",
+      "hora": "12:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Argentina",
+        "codeFifa": "ARG",
+        "codeIso": "AR",
+        "urlFlag": "https://flagcdn.com/ar.svg",
+        "goles": null,
+        "id": "team-004"
+      },
+      "visitante": {
+        "nombre": "Austria",
+        "codeFifa": "AUT",
+        "codeIso": "AT",
+        "urlFlag": "https://flagcdn.com/at.svg",
+        "goles": null,
+        "id": "team-006"
+      }
+    },
+    "match-042": {
+      "id": "match-042",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "I",
+      "fecha": "2026-06-22",
+      "hora": "16:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Francia",
+        "codeFifa": "FRA",
+        "codeIso": "FR",
+        "urlFlag": "https://flagcdn.com/fr.svg",
+        "goles": null,
+        "id": "team-023"
+      },
+      "visitante": {
+        "nombre": "Irak",
+        "codeFifa": "IRQ",
+        "codeIso": "IQ",
+        "urlFlag": "https://flagcdn.com/iq.svg",
+        "goles": null,
+        "id": "team-027"
+      }
+    },
+    "match-043": {
+      "id": "match-043",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "I",
+      "fecha": "2026-06-22",
+      "hora": "19:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Noruega",
+        "codeFifa": "NOR",
+        "codeIso": "NO",
+        "urlFlag": "https://flagcdn.com/no.svg",
+        "goles": null,
+        "id": "team-033"
+      },
+      "visitante": {
+        "nombre": "Senegal",
+        "codeFifa": "SEN",
+        "codeIso": "SN",
+        "urlFlag": "https://flagcdn.com/sn.svg",
+        "goles": null,
+        "id": "team-041"
+      }
+    },
+    "match-044": {
+      "id": "match-044",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "J",
+      "fecha": "2026-06-22",
+      "hora": "22:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Jordania",
+        "codeFifa": "JOR",
+        "codeIso": "JO",
+        "urlFlag": "https://flagcdn.com/jo.svg",
+        "goles": null,
+        "id": "team-030"
+      },
+      "visitante": {
+        "nombre": "Argelia",
+        "codeFifa": "ALG",
+        "codeIso": "DZ",
+        "urlFlag": "https://flagcdn.com/dz.svg",
+        "goles": null,
+        "id": "team-003"
+      }
+    },
+    "match-045": {
+      "id": "match-045",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "K",
+      "fecha": "2026-06-23",
+      "hora": "12:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Portugal",
+        "codeFifa": "POR",
+        "codeIso": "PT",
+        "urlFlag": "https://flagcdn.com/pt.svg",
+        "goles": null,
+        "id": "team-038"
+      },
+      "visitante": {
+        "nombre": "Uzbekistán",
+        "codeFifa": "UZB",
+        "codeIso": "UZ",
+        "urlFlag": "https://flagcdn.com/uz.svg",
+        "goles": null,
+        "id": "team-048"
+      }
+    },
+    "match-046": {
+      "id": "match-046",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "L",
+      "fecha": "2026-06-23",
+      "hora": "15:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Inglaterra",
+        "codeFifa": "ENG",
+        "codeIso": "EN",
+        "urlFlag": "https://flagcdn.com/gb-eng.svg",
+        "goles": null,
+        "id": "team-026"
+      },
+      "visitante": {
+        "nombre": "Ghana",
+        "codeFifa": "GHA",
+        "codeIso": "GH",
+        "urlFlag": "https://flagcdn.com/gh.svg",
+        "goles": null,
+        "id": "team-024"
+      }
+    },
+    "match-047": {
+      "id": "match-047",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "L",
+      "fecha": "2026-06-23",
+      "hora": "18:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Panamá",
+        "codeFifa": "PAN",
+        "codeIso": "PA",
+        "urlFlag": "https://flagcdn.com/pa.svg",
+        "goles": null,
+        "id": "team-036"
+      },
+      "visitante": {
+        "nombre": "Croacia",
+        "codeFifa": "CRO",
+        "codeIso": "HR",
+        "urlFlag": "https://flagcdn.com/hr.svg",
+        "goles": null,
+        "id": "team-016"
+      }
+    },
+    "match-048": {
+      "id": "match-048",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "K",
+      "fecha": "2026-06-23",
+      "hora": "21:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Colombia",
+        "codeFifa": "COL",
+        "codeIso": "CO",
+        "urlFlag": "https://flagcdn.com/co.svg",
+        "goles": null,
+        "id": "team-013"
+      },
+      "visitante": {
+        "nombre": "RD del Congo",
+        "codeFifa": "COD",
+        "codeIso": "CD",
+        "urlFlag": "https://flagcdn.com/cd.svg",
+        "goles": null,
+        "id": "team-039"
+      }
+    },
+    "match-049": {
+      "id": "match-049",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "B",
+      "fecha": "2026-06-24",
+      "hora": "14:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Suiza",
+        "codeFifa": "SUI",
+        "codeIso": "CH",
+        "urlFlag": "https://flagcdn.com/ch.svg",
+        "goles": null,
+        "id": "team-044"
+      },
+      "visitante": {
+        "nombre": "Canadá",
+        "codeFifa": "CAN",
+        "codeIso": "CA",
+        "urlFlag": "https://flagcdn.com/ca.svg",
+        "goles": null,
+        "id": "team-011"
+      }
+    },
+    "match-050": {
+      "id": "match-050",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "B",
+      "fecha": "2026-06-24",
+      "hora": "14:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Bosnia y Herzegovina",
+        "codeFifa": "BIH",
+        "codeIso": "BA",
+        "urlFlag": "https://flagcdn.com/ba.svg",
+        "goles": null,
+        "id": "team-008"
+      },
+      "visitante": {
+        "nombre": "Catar",
+        "codeFifa": "QAT",
+        "codeIso": "QA",
+        "urlFlag": "https://flagcdn.com/qa.svg",
+        "goles": null,
+        "id": "team-012"
+      }
+    },
+    "match-051": {
+      "id": "match-051",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "C",
+      "fecha": "2026-06-24",
+      "hora": "17:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Escocia",
+        "codeFifa": "SCO",
+        "codeIso": "SC",
+        "urlFlag": "https://flagcdn.com/gb-sct.svg",
+        "goles": null,
+        "id": "team-020"
+      },
+      "visitante": {
+        "nombre": "Brasil",
+        "codeFifa": "BRA",
+        "codeIso": "BR",
+        "urlFlag": "https://flagcdn.com/br.svg",
+        "goles": null,
+        "id": "team-009"
+      }
+    },
+    "match-052": {
+      "id": "match-052",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "C",
+      "fecha": "2026-06-24",
+      "hora": "17:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Marruecos",
+        "codeFifa": "MAR",
+        "codeIso": "MA",
+        "urlFlag": "https://flagcdn.com/ma.svg",
+        "goles": null,
+        "id": "team-031"
+      },
+      "visitante": {
+        "nombre": "Haití",
+        "codeFifa": "HAI",
+        "codeIso": "HT",
+        "urlFlag": "https://flagcdn.com/ht.svg",
+        "goles": null,
+        "id": "team-025"
+      }
+    },
+    "match-053": {
+      "id": "match-053",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "A",
+      "fecha": "2026-06-24",
+      "hora": "20:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "República Checa",
+        "codeFifa": "CZE",
+        "codeIso": "CZ",
+        "urlFlag": "https://flagcdn.com/cz.svg",
+        "goles": null,
+        "id": "team-040"
+      },
+      "visitante": {
+        "nombre": "México",
+        "codeFifa": "MEX",
+        "codeIso": "MX",
+        "urlFlag": "https://flagcdn.com/mx.svg",
+        "goles": null,
+        "id": "team-032"
+      }
+    },
+    "match-054": {
+      "id": "match-054",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "A",
+      "fecha": "2026-06-24",
+      "hora": "20:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Sudáfrica",
+        "codeFifa": "RSA",
+        "codeIso": "ZA",
+        "urlFlag": "https://flagcdn.com/za.svg",
+        "goles": null,
+        "id": "team-042"
+      },
+      "visitante": {
+        "nombre": "Corea del Sur",
+        "codeFifa": "KOR",
+        "codeIso": "KR",
+        "urlFlag": "https://flagcdn.com/kr.svg",
+        "goles": null,
+        "id": "team-014"
+      }
+    },
+    "match-055": {
+      "id": "match-055",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "E",
+      "fecha": "2026-06-25",
+      "hora": "15:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Curazao",
+        "codeFifa": "CUW",
+        "codeIso": "CW",
+        "urlFlag": "https://flagcdn.com/cw.svg",
+        "goles": null,
+        "id": "team-017"
+      },
+      "visitante": {
+        "nombre": "Costa de Marfil",
+        "codeFifa": "CIV",
+        "codeIso": "CI",
+        "urlFlag": "https://flagcdn.com/ci.svg",
+        "goles": null,
+        "id": "team-015"
+      }
+    },
+    "match-056": {
+      "id": "match-056",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "E",
+      "fecha": "2026-06-25",
+      "hora": "15:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Ecuador",
+        "codeFifa": "ECU",
+        "codeIso": "EC",
+        "urlFlag": "https://flagcdn.com/ec.svg",
+        "goles": null,
+        "id": "team-018"
+      },
+      "visitante": {
+        "nombre": "Alemania",
+        "codeFifa": "GER",
+        "codeIso": "DE",
+        "urlFlag": "https://flagcdn.com/de.svg",
+        "goles": null,
+        "id": "team-001"
+      }
+    },
+    "match-057": {
+      "id": "match-057",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "F",
+      "fecha": "2026-06-25",
+      "hora": "18:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Japón",
+        "codeFifa": "JPN",
+        "codeIso": "JP",
+        "urlFlag": "https://flagcdn.com/jp.svg",
+        "goles": null,
+        "id": "team-029"
+      },
+      "visitante": {
+        "nombre": "Suecia",
+        "codeFifa": "SWE",
+        "codeIso": "SE",
+        "urlFlag": "https://flagcdn.com/se.svg",
+        "goles": null,
+        "id": "team-043"
+      }
+    },
+    "match-058": {
+      "id": "match-058",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "F",
+      "fecha": "2026-06-25",
+      "hora": "18:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Túnez",
+        "codeFifa": "TUN",
+        "codeIso": "TN",
+        "urlFlag": "https://flagcdn.com/tn.svg",
+        "goles": null,
+        "id": "team-045"
+      },
+      "visitante": {
+        "nombre": "Países Bajos",
+        "codeFifa": "NED",
+        "codeIso": "NL",
+        "urlFlag": "https://flagcdn.com/nl.svg",
+        "goles": null,
+        "id": "team-035"
+      }
+    },
+    "match-059": {
+      "id": "match-059",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "D",
+      "fecha": "2026-06-25",
+      "hora": "21:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Turquía",
+        "codeFifa": "TUR",
+        "codeIso": "TR",
+        "urlFlag": "https://flagcdn.com/tr.svg",
+        "goles": null,
+        "id": "team-046"
+      },
+      "visitante": {
+        "nombre": "Estados Unidos",
+        "codeFifa": "USA",
+        "codeIso": "US",
+        "urlFlag": "https://flagcdn.com/us.svg",
+        "goles": null,
+        "id": "team-022"
+      }
+    },
+    "match-060": {
+      "id": "match-060",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "D",
+      "fecha": "2026-06-25",
+      "hora": "21:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Paraguay",
+        "codeFifa": "PAR",
+        "codeIso": "PY",
+        "urlFlag": "https://flagcdn.com/py.svg",
+        "goles": null,
+        "id": "team-037"
+      },
+      "visitante": {
+        "nombre": "Australia",
+        "codeFifa": "AUS",
+        "codeIso": "AU",
+        "urlFlag": "https://flagcdn.com/au.svg",
+        "goles": null,
+        "id": "team-005"
+      }
+    },
+    "match-061": {
+      "id": "match-061",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "I",
+      "fecha": "2026-06-26",
+      "hora": "14:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Noruega",
+        "codeFifa": "NOR",
+        "codeIso": "NO",
+        "urlFlag": "https://flagcdn.com/no.svg",
+        "goles": null,
+        "id": "team-033"
+      },
+      "visitante": {
+        "nombre": "Francia",
+        "codeFifa": "FRA",
+        "codeIso": "FR",
+        "urlFlag": "https://flagcdn.com/fr.svg",
+        "goles": null,
+        "id": "team-023"
+      }
+    },
+    "match-062": {
+      "id": "match-062",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "I",
+      "fecha": "2026-06-26",
+      "hora": "14:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Senegal",
+        "codeFifa": "SEN",
+        "codeIso": "SN",
+        "urlFlag": "https://flagcdn.com/sn.svg",
+        "goles": null,
+        "id": "team-041"
+      },
+      "visitante": {
+        "nombre": "Irak",
+        "codeFifa": "IRQ",
+        "codeIso": "IQ",
+        "urlFlag": "https://flagcdn.com/iq.svg",
+        "goles": null,
+        "id": "team-027"
+      }
+    },
+    "match-063": {
+      "id": "match-063",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "H",
+      "fecha": "2026-06-26",
+      "hora": "19:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Cabo Verde",
+        "codeFifa": "CPV",
+        "codeIso": "CV",
+        "urlFlag": "https://flagcdn.com/cv.svg",
+        "goles": null,
+        "id": "team-010"
+      },
+      "visitante": {
+        "nombre": "Arabia Saudita",
+        "codeFifa": "SAU",
+        "codeIso": "SA",
+        "urlFlag": "https://flagcdn.com/sa.svg",
+        "goles": null,
+        "id": "team-002"
+      }
+    },
+    "match-064": {
+      "id": "match-064",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "H",
+      "fecha": "2026-06-26",
+      "hora": "19:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Uruguay",
+        "codeFifa": "URU",
+        "codeIso": "UY",
+        "urlFlag": "https://flagcdn.com/uy.svg",
+        "goles": null,
+        "id": "team-047"
+      },
+      "visitante": {
+        "nombre": "España",
+        "codeFifa": "ESP",
+        "codeIso": "ES",
+        "urlFlag": "https://flagcdn.com/es.svg",
+        "goles": null,
+        "id": "team-021"
+      }
+    },
+    "match-065": {
+      "id": "match-065",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "G",
+      "fecha": "2026-06-26",
+      "hora": "22:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Egipto",
+        "codeFifa": "EGY",
+        "codeIso": "EG",
+        "urlFlag": "https://flagcdn.com/eg.svg",
+        "goles": null,
+        "id": "team-019"
+      },
+      "visitante": {
+        "nombre": "Irán",
+        "codeFifa": "IRN",
+        "codeIso": "IR",
+        "urlFlag": "https://flagcdn.com/ir.svg",
+        "goles": null,
+        "id": "team-028"
+      }
+    },
+    "match-066": {
+      "id": "match-066",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "G",
+      "fecha": "2026-06-26",
+      "hora": "22:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Nueva Zelanda",
+        "codeFifa": "NZL",
+        "codeIso": "NZ",
+        "urlFlag": "https://flagcdn.com/nz.svg",
+        "goles": null,
+        "id": "team-034"
+      },
+      "visitante": {
+        "nombre": "Bélgica",
+        "codeFifa": "BEL",
+        "codeIso": "BE",
+        "urlFlag": "https://flagcdn.com/be.svg",
+        "goles": null,
+        "id": "team-007"
+      }
+    },
+    "match-067": {
+      "id": "match-067",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "L",
+      "fecha": "2026-06-27",
+      "hora": "16:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Panamá",
+        "codeFifa": "PAN",
+        "codeIso": "PA",
+        "urlFlag": "https://flagcdn.com/pa.svg",
+        "goles": null,
+        "id": "team-036"
+      },
+      "visitante": {
+        "nombre": "Inglaterra",
+        "codeFifa": "ENG",
+        "codeIso": "EN",
+        "urlFlag": "https://flagcdn.com/gb-eng.svg",
+        "goles": null,
+        "id": "team-026"
+      }
+    },
+    "match-068": {
+      "id": "match-068",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "L",
+      "fecha": "2026-06-27",
+      "hora": "16:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Croacia",
+        "codeFifa": "CRO",
+        "codeIso": "HR",
+        "urlFlag": "https://flagcdn.com/hr.svg",
+        "goles": null,
+        "id": "team-016"
+      },
+      "visitante": {
+        "nombre": "Ghana",
+        "codeFifa": "GHA",
+        "codeIso": "GH",
+        "urlFlag": "https://flagcdn.com/gh.svg",
+        "goles": null,
+        "id": "team-024"
+      }
+    },
+    "match-069": {
+      "id": "match-069",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "K",
+      "fecha": "2026-06-27",
+      "hora": "18:30",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Colombia",
+        "codeFifa": "COL",
+        "codeIso": "CO",
+        "urlFlag": "https://flagcdn.com/co.svg",
+        "goles": null,
+        "id": "team-013"
+      },
+      "visitante": {
+        "nombre": "Portugal",
+        "codeFifa": "POR",
+        "codeIso": "PT",
+        "urlFlag": "https://flagcdn.com/pt.svg",
+        "goles": null,
+        "id": "team-038"
+      }
+    },
+    "match-070": {
+      "id": "match-070",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "K",
+      "fecha": "2026-06-27",
+      "hora": "18:30",
+      "timestamp": 0,
+      "local": {
+        "nombre": "RD del Congo",
+        "codeFifa": "COD",
+        "codeIso": "CD",
+        "urlFlag": "https://flagcdn.com/cd.svg",
+        "goles": null,
+        "id": "team-039"
+      },
+      "visitante": {
+        "nombre": "Uzbekistán",
+        "codeFifa": "UZB",
+        "codeIso": "UZ",
+        "urlFlag": "https://flagcdn.com/uz.svg",
+        "goles": null,
+        "id": "team-048"
+      }
+    },
+    "match-071": {
+      "id": "match-071",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "J",
+      "fecha": "2026-06-27",
+      "hora": "21:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Argelia",
+        "codeFifa": "ALG",
+        "codeIso": "DZ",
+        "urlFlag": "https://flagcdn.com/dz.svg",
+        "goles": null,
+        "id": "team-003"
+      },
+      "visitante": {
+        "nombre": "Austria",
+        "codeFifa": "AUT",
+        "codeIso": "AT",
+        "urlFlag": "https://flagcdn.com/at.svg",
+        "goles": null,
+        "id": "team-006"
+      }
+    },
+    "match-072": {
+      "id": "match-072",
+      "fase": "Fase de grupos",
+      "estado": "Programado",
+      "grupo": "J",
+      "fecha": "2026-06-27",
+      "hora": "21:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Jordania",
+        "codeFifa": "JOR",
+        "codeIso": "JO",
+        "urlFlag": "https://flagcdn.com/jo.svg",
+        "goles": null,
+        "id": "team-030"
+      },
+      "visitante": {
+        "nombre": "Argentina",
+        "codeFifa": "ARG",
+        "codeIso": "AR",
+        "urlFlag": "https://flagcdn.com/ar.svg",
+        "goles": null,
+        "id": "team-004"
+      }
+    },
+    "match-073": {
+      "id": "match-073",
+      "fase": "Dieciseisavos de final",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-06-28",
+      "hora": "14:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-074": {
+      "id": "match-074",
+      "fase": "Dieciseisavos de final",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-06-29",
+      "hora": "12:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-075": {
+      "id": "match-075",
+      "fase": "Dieciseisavos de final",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-06-29",
+      "hora": "15:30",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-076": {
+      "id": "match-076",
+      "fase": "Dieciseisavos de final",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-06-29",
+      "hora": "20:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-077": {
+      "id": "match-077",
+      "fase": "Dieciseisavos de final",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-06-30",
+      "hora": "12:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-078": {
+      "id": "match-078",
+      "fase": "Dieciseisavos de final",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-06-30",
+      "hora": "16:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-079": {
+      "id": "match-079",
+      "fase": "Dieciseisavos de final",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-06-30",
+      "hora": "20:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-080": {
+      "id": "match-080",
+      "fase": "Dieciseisavos de final",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-07-01",
+      "hora": "11:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-081": {
+      "id": "match-081",
+      "fase": "Dieciseisavos de final",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-07-01",
+      "hora": "15:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-082": {
+      "id": "match-082",
+      "fase": "Dieciseisavos de final",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-07-01",
+      "hora": "19:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-083": {
+      "id": "match-083",
+      "fase": "Dieciseisavos de final",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-07-02",
+      "hora": "14:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-084": {
+      "id": "match-084",
+      "fase": "Dieciseisavos de final",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-07-02",
+      "hora": "18:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-085": {
+      "id": "match-085",
+      "fase": "Dieciseisavos de final",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-07-02",
+      "hora": "22:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-086": {
+      "id": "match-086",
+      "fase": "Dieciseisavos de final",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-07-03",
+      "hora": "13:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-087": {
+      "id": "match-087",
+      "fase": "Dieciseisavos de final",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-07-03",
+      "hora": "17:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-088": {
+      "id": "match-088",
+      "fase": "Dieciseisavos de final",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-07-03",
+      "hora": "20:30",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-089": {
+      "id": "match-089",
+      "fase": "Octavos de final",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-07-04",
+      "hora": "12:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-090": {
+      "id": "match-090",
+      "fase": "Octavos de final",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-07-04",
+      "hora": "16:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-091": {
+      "id": "match-091",
+      "fase": "Octavos de final",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-07-05",
+      "hora": "15:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-092": {
+      "id": "match-092",
+      "fase": "Octavos de final",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-07-05",
+      "hora": "19:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-093": {
+      "id": "match-093",
+      "fase": "Octavos de final",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-07-06",
+      "hora": "14:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-094": {
+      "id": "match-094",
+      "fase": "Octavos de final",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-07-06",
+      "hora": "19:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-095": {
+      "id": "match-095",
+      "fase": "Octavos de final",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-07-07",
+      "hora": "11:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-096": {
+      "id": "match-096",
+      "fase": "Octavos de final",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-07-07",
+      "hora": "15:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-097": {
+      "id": "match-097",
+      "fase": "Cuartos de final",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-07-09",
+      "hora": "15:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-098": {
+      "id": "match-098",
+      "fase": "Cuartos de final",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-07-10",
+      "hora": "14:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-099": {
+      "id": "match-099",
+      "fase": "Cuartos de final",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-07-11",
+      "hora": "16:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-100": {
+      "id": "match-100",
+      "fase": "Cuartos de final",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-07-11",
+      "hora": "20:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-101": {
+      "id": "match-101",
+      "fase": "Semifinal",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-07-14",
+      "hora": "14:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-102": {
+      "id": "match-102",
+      "fase": "Semifinal",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-07-15",
+      "hora": "14:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-103": {
+      "id": "match-103",
+      "fase": "Partido por el tercer puesto",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-07-18",
+      "hora": "16:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    },
+    "match-104": {
+      "id": "match-104",
+      "fase": "Final",
+      "estado": "Programado",
+      "grupo": "",
+      "fecha": "2026-07-19",
+      "hora": "14:00",
+      "timestamp": 0,
+      "local": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "visitante": {
+        "nombre": "Por Asignar",
+        "codeFifa": "FIFA",
+        "codeIso": "FIFA",
+        "urlFlag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_FIFA.svg",
+        "goles": null,
+        "id": "team-tbd"
+      },
+      "golesProrroga": {
+        "local": null,
+        "visitante": null
+      },
+      "penales": {
+        "local": null,
+        "visitante": null
+      }
+    }
+  },
+  "standings": {
+    "E": [
+      {
+        "id": "team-001",
+        "nombre": "Alemania",
+        "codeFifa": "GER",
+        "codeIso": "DE",
+        "urlFlag": "https://flagcdn.com/de.svg",
+        "grupo": "E",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-015",
+        "nombre": "Costa de Marfil",
+        "codeFifa": "CIV",
+        "codeIso": "CI",
+        "urlFlag": "https://flagcdn.com/ci.svg",
+        "grupo": "E",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-017",
+        "nombre": "Curazao",
+        "codeFifa": "CUW",
+        "codeIso": "CW",
+        "urlFlag": "https://flagcdn.com/cw.svg",
+        "grupo": "E",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-018",
+        "nombre": "Ecuador",
+        "codeFifa": "ECU",
+        "codeIso": "EC",
+        "urlFlag": "https://flagcdn.com/ec.svg",
+        "grupo": "E",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      }
+    ],
+    "H": [
+      {
+        "id": "team-002",
+        "nombre": "Arabia Saudita",
+        "codeFifa": "SAU",
+        "codeIso": "SA",
+        "urlFlag": "https://flagcdn.com/sa.svg",
+        "grupo": "H",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-010",
+        "nombre": "Cabo Verde",
+        "codeFifa": "CPV",
+        "codeIso": "CV",
+        "urlFlag": "https://flagcdn.com/cv.svg",
+        "grupo": "H",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-021",
+        "nombre": "España",
+        "codeFifa": "ESP",
+        "codeIso": "ES",
+        "urlFlag": "https://flagcdn.com/es.svg",
+        "grupo": "H",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-047",
+        "nombre": "Uruguay",
+        "codeFifa": "URU",
+        "codeIso": "UY",
+        "urlFlag": "https://flagcdn.com/uy.svg",
+        "grupo": "H",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      }
+    ],
+    "J": [
+      {
+        "id": "team-003",
+        "nombre": "Argelia",
+        "codeFifa": "ALG",
+        "codeIso": "DZ",
+        "urlFlag": "https://flagcdn.com/dz.svg",
+        "grupo": "J",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-004",
+        "nombre": "Argentina",
+        "codeFifa": "ARG",
+        "codeIso": "AR",
+        "urlFlag": "https://flagcdn.com/ar.svg",
+        "grupo": "J",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-006",
+        "nombre": "Austria",
+        "codeFifa": "AUT",
+        "codeIso": "AT",
+        "urlFlag": "https://flagcdn.com/at.svg",
+        "grupo": "J",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-030",
+        "nombre": "Jordania",
+        "codeFifa": "JOR",
+        "codeIso": "JO",
+        "urlFlag": "https://flagcdn.com/jo.svg",
+        "grupo": "J",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      }
+    ],
+    "D": [
+      {
+        "id": "team-005",
+        "nombre": "Australia",
+        "codeFifa": "AUS",
+        "codeIso": "AU",
+        "urlFlag": "https://flagcdn.com/au.svg",
+        "grupo": "D",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-022",
+        "nombre": "Estados Unidos",
+        "codeFifa": "USA",
+        "codeIso": "US",
+        "urlFlag": "https://flagcdn.com/us.svg",
+        "grupo": "D",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-037",
+        "nombre": "Paraguay",
+        "codeFifa": "PAR",
+        "codeIso": "PY",
+        "urlFlag": "https://flagcdn.com/py.svg",
+        "grupo": "D",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-046",
+        "nombre": "Turquía",
+        "codeFifa": "TUR",
+        "codeIso": "TR",
+        "urlFlag": "https://flagcdn.com/tr.svg",
+        "grupo": "D",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      }
+    ],
+    "G": [
+      {
+        "id": "team-007",
+        "nombre": "Bélgica",
+        "codeFifa": "BEL",
+        "codeIso": "BE",
+        "urlFlag": "https://flagcdn.com/be.svg",
+        "grupo": "G",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-019",
+        "nombre": "Egipto",
+        "codeFifa": "EGY",
+        "codeIso": "EG",
+        "urlFlag": "https://flagcdn.com/eg.svg",
+        "grupo": "G",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-028",
+        "nombre": "Irán",
+        "codeFifa": "IRN",
+        "codeIso": "IR",
+        "urlFlag": "https://flagcdn.com/ir.svg",
+        "grupo": "G",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-034",
+        "nombre": "Nueva Zelanda",
+        "codeFifa": "NZL",
+        "codeIso": "NZ",
+        "urlFlag": "https://flagcdn.com/nz.svg",
+        "grupo": "G",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      }
+    ],
+    "B": [
+      {
+        "id": "team-008",
+        "nombre": "Bosnia y Herzegovina",
+        "codeFifa": "BIH",
+        "codeIso": "BA",
+        "urlFlag": "https://flagcdn.com/ba.svg",
+        "grupo": "B",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-011",
+        "nombre": "Canadá",
+        "codeFifa": "CAN",
+        "codeIso": "CA",
+        "urlFlag": "https://flagcdn.com/ca.svg",
+        "grupo": "B",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-012",
+        "nombre": "Catar",
+        "codeFifa": "QAT",
+        "codeIso": "QA",
+        "urlFlag": "https://flagcdn.com/qa.svg",
+        "grupo": "B",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-044",
+        "nombre": "Suiza",
+        "codeFifa": "SUI",
+        "codeIso": "CH",
+        "urlFlag": "https://flagcdn.com/ch.svg",
+        "grupo": "B",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      }
+    ],
+    "C": [
+      {
+        "id": "team-009",
+        "nombre": "Brasil",
+        "codeFifa": "BRA",
+        "codeIso": "BR",
+        "urlFlag": "https://flagcdn.com/br.svg",
+        "grupo": "C",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-020",
+        "nombre": "Escocia",
+        "codeFifa": "SCO",
+        "codeIso": "SC",
+        "urlFlag": "https://flagcdn.com/gb-sct.svg",
+        "grupo": "C",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-025",
+        "nombre": "Haití",
+        "codeFifa": "HAI",
+        "codeIso": "HT",
+        "urlFlag": "https://flagcdn.com/ht.svg",
+        "grupo": "C",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-031",
+        "nombre": "Marruecos",
+        "codeFifa": "MAR",
+        "codeIso": "MA",
+        "urlFlag": "https://flagcdn.com/ma.svg",
+        "grupo": "C",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      }
+    ],
+    "K": [
+      {
+        "id": "team-013",
+        "nombre": "Colombia",
+        "codeFifa": "COL",
+        "codeIso": "CO",
+        "urlFlag": "https://flagcdn.com/co.svg",
+        "grupo": "K",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-038",
+        "nombre": "Portugal",
+        "codeFifa": "POR",
+        "codeIso": "PT",
+        "urlFlag": "https://flagcdn.com/pt.svg",
+        "grupo": "K",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-039",
+        "nombre": "RD del Congo",
+        "codeFifa": "COD",
+        "codeIso": "CD",
+        "urlFlag": "https://flagcdn.com/cd.svg",
+        "grupo": "K",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-048",
+        "nombre": "Uzbekistán",
+        "codeFifa": "UZB",
+        "codeIso": "UZ",
+        "urlFlag": "https://flagcdn.com/uz.svg",
+        "grupo": "K",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      }
+    ],
+    "A": [
+      {
+        "id": "team-014",
+        "nombre": "Corea del Sur",
+        "codeFifa": "KOR",
+        "codeIso": "KR",
+        "urlFlag": "https://flagcdn.com/kr.svg",
+        "grupo": "A",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-032",
+        "nombre": "México",
+        "codeFifa": "MEX",
+        "codeIso": "MX",
+        "urlFlag": "https://flagcdn.com/mx.svg",
+        "grupo": "A",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-040",
+        "nombre": "República Checa",
+        "codeFifa": "CZE",
+        "codeIso": "CZ",
+        "urlFlag": "https://flagcdn.com/cz.svg",
+        "grupo": "A",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-042",
+        "nombre": "Sudáfrica",
+        "codeFifa": "RSA",
+        "codeIso": "ZA",
+        "urlFlag": "https://flagcdn.com/za.svg",
+        "grupo": "A",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      }
+    ],
+    "L": [
+      {
+        "id": "team-016",
+        "nombre": "Croacia",
+        "codeFifa": "CRO",
+        "codeIso": "HR",
+        "urlFlag": "https://flagcdn.com/hr.svg",
+        "grupo": "L",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-024",
+        "nombre": "Ghana",
+        "codeFifa": "GHA",
+        "codeIso": "GH",
+        "urlFlag": "https://flagcdn.com/gh.svg",
+        "grupo": "L",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-026",
+        "nombre": "Inglaterra",
+        "codeFifa": "ENG",
+        "codeIso": "EN",
+        "urlFlag": "https://flagcdn.com/gb-eng.svg",
+        "grupo": "L",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-036",
+        "nombre": "Panamá",
+        "codeFifa": "PAN",
+        "codeIso": "PA",
+        "urlFlag": "https://flagcdn.com/pa.svg",
+        "grupo": "L",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      }
+    ],
+    "I": [
+      {
+        "id": "team-023",
+        "nombre": "Francia",
+        "codeFifa": "FRA",
+        "codeIso": "FR",
+        "urlFlag": "https://flagcdn.com/fr.svg",
+        "grupo": "I",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-027",
+        "nombre": "Irak",
+        "codeFifa": "IRQ",
+        "codeIso": "IQ",
+        "urlFlag": "https://flagcdn.com/iq.svg",
+        "grupo": "I",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-033",
+        "nombre": "Noruega",
+        "codeFifa": "NOR",
+        "codeIso": "NO",
+        "urlFlag": "https://flagcdn.com/no.svg",
+        "grupo": "I",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-041",
+        "nombre": "Senegal",
+        "codeFifa": "SEN",
+        "codeIso": "SN",
+        "urlFlag": "https://flagcdn.com/sn.svg",
+        "grupo": "I",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      }
+    ],
+    "F": [
+      {
+        "id": "team-029",
+        "nombre": "Japón",
+        "codeFifa": "JPN",
+        "codeIso": "JP",
+        "urlFlag": "https://flagcdn.com/jp.svg",
+        "grupo": "F",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-035",
+        "nombre": "Países Bajos",
+        "codeFifa": "NED",
+        "codeIso": "NL",
+        "urlFlag": "https://flagcdn.com/nl.svg",
+        "grupo": "F",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-043",
+        "nombre": "Suecia",
+        "codeFifa": "SWE",
+        "codeIso": "SE",
+        "urlFlag": "https://flagcdn.com/se.svg",
+        "grupo": "F",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-045",
+        "nombre": "Túnez",
+        "codeFifa": "TUN",
+        "codeIso": "TN",
+        "urlFlag": "https://flagcdn.com/tn.svg",
+        "grupo": "F",
+        "pj": 0,
+        "pg": 0,
+        "pe": 0,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 0
+      }
+    ]
+  },
+  "lastUpdated": 0,
+  "totalMatches": 104,
+  "syncedBy": "sistema"
+}
