@@ -103,7 +103,7 @@
     "match-005": {
       "id": "match-005",
       "fase": "Fase de grupos",
-      "estado": "En Juego",
+      "estado": "Suspendido",
       "grupo": "B",
       "fecha": "2026-06-13",
       "hora": "14:00",
@@ -128,7 +128,7 @@
     "match-006": {
       "id": "match-006",
       "fase": "Fase de grupos",
-      "estado": "Programado",
+      "estado": "En Juego",
       "grupo": "C",
       "fecha": "2026-06-13",
       "hora": "17:00",
@@ -153,7 +153,7 @@
     "match-007": {
       "id": "match-007",
       "fase": "Fase de grupos",
-      "estado": "Programado",
+      "estado": "Finalizado",
       "grupo": "C",
       "fecha": "2026-06-13",
       "hora": "20:00",
@@ -3256,36 +3256,20 @@
     ],
     "C": [
       {
-        "id": "team-009",
-        "nombre": "Brasil",
-        "codeFifa": "BRA",
-        "codeIso": "BR",
-        "urlFlag": "https://flagcdn.com/br.svg",
-        "grupo": "C",
-        "pj": 0,
-        "pg": 0,
-        "pe": 0,
-        "pp": 0,
-        "gf": 0,
-        "gc": 0,
-        "dg": 0,
-        "pts": 0
-      },
-      {
         "id": "team-020",
         "nombre": "Escocia",
         "codeFifa": "SCO",
         "codeIso": "SC",
         "urlFlag": "https://flagcdn.com/gb-sct.svg",
         "grupo": "C",
-        "pj": 0,
+        "pj": 1,
         "pg": 0,
-        "pe": 0,
+        "pe": 1,
         "pp": 0,
         "gf": 0,
         "gc": 0,
         "dg": 0,
-        "pts": 0
+        "pts": 1
       },
       {
         "id": "team-025",
@@ -3293,6 +3277,22 @@
         "codeFifa": "HAI",
         "codeIso": "HT",
         "urlFlag": "https://flagcdn.com/ht.svg",
+        "grupo": "C",
+        "pj": 1,
+        "pg": 0,
+        "pe": 1,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 1
+      },
+      {
+        "id": "team-009",
+        "nombre": "Brasil",
+        "codeFifa": "BRA",
+        "codeIso": "BR",
+        "urlFlag": "https://flagcdn.com/br.svg",
         "grupo": "C",
         "pj": 0,
         "pg": 0,
@@ -3651,7 +3651,7 @@
       }
     ]
   },
-  "lastUpdated": 1781286694434,
+  "lastUpdated": 1781286737360,
   "totalMatches": 104,
   "syncedBy": "sistema"
 }
