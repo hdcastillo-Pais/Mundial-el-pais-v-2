@@ -3,7 +3,7 @@
     "match-001": {
       "id": "match-001",
       "fase": "Fase de grupos",
-      "estado": "Programado",
+      "estado": "Finalizado",
       "grupo": "A",
       "fecha": "2026-06-11",
       "hora": "14:00",
@@ -13,7 +13,7 @@
         "codeFifa": "MEX",
         "codeIso": "MX",
         "urlFlag": "https://flagcdn.com/mx.svg",
-        "goles": null,
+        "goles": 2,
         "id": "team-032"
       },
       "visitante": {
@@ -21,14 +21,14 @@
         "codeFifa": "RSA",
         "codeIso": "ZA",
         "urlFlag": "https://flagcdn.com/za.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-042"
       }
     },
     "match-002": {
       "id": "match-002",
       "fase": "Fase de grupos",
-      "estado": "Programado",
+      "estado": "Finalizado",
       "grupo": "A",
       "fecha": "2026-06-11",
       "hora": "21:00",
@@ -38,7 +38,7 @@
         "codeFifa": "KOR",
         "codeIso": "KR",
         "urlFlag": "https://flagcdn.com/kr.svg",
-        "goles": null,
+        "goles": 2,
         "id": "team-014"
       },
       "visitante": {
@@ -46,7 +46,7 @@
         "codeFifa": "CZE",
         "codeIso": "CZ",
         "urlFlag": "https://flagcdn.com/cz.svg",
-        "goles": null,
+        "goles": 1,
         "id": "team-040"
       }
     },
@@ -63,7 +63,7 @@
         "codeFifa": "CAN",
         "codeIso": "CA",
         "urlFlag": "https://flagcdn.com/ca.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-011"
       },
       "visitante": {
@@ -71,7 +71,7 @@
         "codeFifa": "BIH",
         "codeIso": "BA",
         "urlFlag": "https://flagcdn.com/ba.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-008"
       }
     },
@@ -88,7 +88,7 @@
         "codeFifa": "USA",
         "codeIso": "US",
         "urlFlag": "https://flagcdn.com/us.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-022"
       },
       "visitante": {
@@ -96,7 +96,7 @@
         "codeFifa": "PAR",
         "codeIso": "PY",
         "urlFlag": "https://flagcdn.com/py.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-037"
       }
     },
@@ -113,7 +113,7 @@
         "codeFifa": "QAT",
         "codeIso": "QA",
         "urlFlag": "https://flagcdn.com/qa.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-012"
       },
       "visitante": {
@@ -121,7 +121,7 @@
         "codeFifa": "SUI",
         "codeIso": "CH",
         "urlFlag": "https://flagcdn.com/ch.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-044"
       }
     },
@@ -138,7 +138,7 @@
         "codeFifa": "BRA",
         "codeIso": "BR",
         "urlFlag": "https://flagcdn.com/br.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-009"
       },
       "visitante": {
@@ -146,7 +146,7 @@
         "codeFifa": "MAR",
         "codeIso": "MA",
         "urlFlag": "https://flagcdn.com/ma.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-031"
       }
     },
@@ -163,7 +163,7 @@
         "codeFifa": "HAI",
         "codeIso": "HT",
         "urlFlag": "https://flagcdn.com/ht.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-025"
       },
       "visitante": {
@@ -171,7 +171,7 @@
         "codeFifa": "SCO",
         "codeIso": "SC",
         "urlFlag": "https://flagcdn.com/gb-sct.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-020"
       }
     },
@@ -188,7 +188,7 @@
         "codeFifa": "AUS",
         "codeIso": "AU",
         "urlFlag": "https://flagcdn.com/au.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-005"
       },
       "visitante": {
@@ -196,7 +196,7 @@
         "codeFifa": "TUR",
         "codeIso": "TR",
         "urlFlag": "https://flagcdn.com/tr.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-046"
       }
     },
@@ -213,7 +213,7 @@
         "codeFifa": "GER",
         "codeIso": "DE",
         "urlFlag": "https://flagcdn.com/de.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-001"
       },
       "visitante": {
@@ -221,14 +221,14 @@
         "codeFifa": "CUW",
         "codeIso": "CW",
         "urlFlag": "https://flagcdn.com/cw.svg",
-        "goles": null,
+        "goles": 2,
         "id": "team-017"
       }
     },
     "match-010": {
       "id": "match-010",
       "fase": "Fase de grupos",
-      "estado": "Programado",
+      "estado": "Finalizado",
       "grupo": "F",
       "fecha": "2026-06-14",
       "hora": "15:00",
@@ -238,7 +238,7 @@
         "codeFifa": "NED",
         "codeIso": "NL",
         "urlFlag": "https://flagcdn.com/nl.svg",
-        "goles": null,
+        "goles": 1,
         "id": "team-035"
       },
       "visitante": {
@@ -246,14 +246,14 @@
         "codeFifa": "JPN",
         "codeIso": "JP",
         "urlFlag": "https://flagcdn.com/jp.svg",
-        "goles": null,
+        "goles": 3,
         "id": "team-029"
       }
     },
     "match-011": {
       "id": "match-011",
       "fase": "Fase de grupos",
-      "estado": "Programado",
+      "estado": "Finalizado",
       "grupo": "E",
       "fecha": "2026-06-14",
       "hora": "18:00",
@@ -263,7 +263,7 @@
         "codeFifa": "CIV",
         "codeIso": "CI",
         "urlFlag": "https://flagcdn.com/ci.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-015"
       },
       "visitante": {
@@ -271,14 +271,14 @@
         "codeFifa": "ECU",
         "codeIso": "EC",
         "urlFlag": "https://flagcdn.com/ec.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-018"
       }
     },
     "match-012": {
       "id": "match-012",
       "fase": "Fase de grupos",
-      "estado": "Programado",
+      "estado": "Finalizado",
       "grupo": "F",
       "fecha": "2026-06-14",
       "hora": "21:00",
@@ -288,7 +288,7 @@
         "codeFifa": "SWE",
         "codeIso": "SE",
         "urlFlag": "https://flagcdn.com/se.svg",
-        "goles": null,
+        "goles": 3,
         "id": "team-043"
       },
       "visitante": {
@@ -296,7 +296,7 @@
         "codeFifa": "TUN",
         "codeIso": "TN",
         "urlFlag": "https://flagcdn.com/tn.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-045"
       }
     },
@@ -313,7 +313,7 @@
         "codeFifa": "ESP",
         "codeIso": "ES",
         "urlFlag": "https://flagcdn.com/es.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-021"
       },
       "visitante": {
@@ -321,7 +321,7 @@
         "codeFifa": "CPV",
         "codeIso": "CV",
         "urlFlag": "https://flagcdn.com/cv.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-010"
       }
     },
@@ -338,7 +338,7 @@
         "codeFifa": "BEL",
         "codeIso": "BE",
         "urlFlag": "https://flagcdn.com/be.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-007"
       },
       "visitante": {
@@ -346,7 +346,7 @@
         "codeFifa": "EGY",
         "codeIso": "EG",
         "urlFlag": "https://flagcdn.com/eg.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-019"
       }
     },
@@ -363,7 +363,7 @@
         "codeFifa": "SAU",
         "codeIso": "SA",
         "urlFlag": "https://flagcdn.com/sa.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-002"
       },
       "visitante": {
@@ -371,7 +371,7 @@
         "codeFifa": "URU",
         "codeIso": "UY",
         "urlFlag": "https://flagcdn.com/uy.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-047"
       }
     },
@@ -388,7 +388,7 @@
         "codeFifa": "IRN",
         "codeIso": "IR",
         "urlFlag": "https://flagcdn.com/ir.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-028"
       },
       "visitante": {
@@ -396,7 +396,7 @@
         "codeFifa": "NZL",
         "codeIso": "NZ",
         "urlFlag": "https://flagcdn.com/nz.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-034"
       }
     },
@@ -413,7 +413,7 @@
         "codeFifa": "FRA",
         "codeIso": "FR",
         "urlFlag": "https://flagcdn.com/fr.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-023"
       },
       "visitante": {
@@ -421,7 +421,7 @@
         "codeFifa": "SEN",
         "codeIso": "SN",
         "urlFlag": "https://flagcdn.com/sn.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-041"
       }
     },
@@ -438,7 +438,7 @@
         "codeFifa": "IRQ",
         "codeIso": "IQ",
         "urlFlag": "https://flagcdn.com/iq.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-027"
       },
       "visitante": {
@@ -446,7 +446,7 @@
         "codeFifa": "NOR",
         "codeIso": "NO",
         "urlFlag": "https://flagcdn.com/no.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-033"
       }
     },
@@ -463,7 +463,7 @@
         "codeFifa": "ARG",
         "codeIso": "AR",
         "urlFlag": "https://flagcdn.com/ar.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-004"
       },
       "visitante": {
@@ -471,7 +471,7 @@
         "codeFifa": "ALG",
         "codeIso": "DZ",
         "urlFlag": "https://flagcdn.com/dz.svg",
-        "goles": null,
+        "goles": 0,
         "id": "team-003"
       }
     },
@@ -2866,14 +2866,30 @@
         "codeIso": "CI",
         "urlFlag": "https://flagcdn.com/ci.svg",
         "grupo": "E",
-        "pj": 0,
+        "pj": 1,
         "pg": 0,
-        "pe": 0,
+        "pe": 1,
         "pp": 0,
         "gf": 0,
         "gc": 0,
         "dg": 0,
-        "pts": 0
+        "pts": 1
+      },
+      {
+        "id": "team-018",
+        "nombre": "Ecuador",
+        "codeFifa": "ECU",
+        "codeIso": "EC",
+        "urlFlag": "https://flagcdn.com/ec.svg",
+        "grupo": "E",
+        "pj": 1,
+        "pg": 0,
+        "pe": 1,
+        "pp": 0,
+        "gf": 0,
+        "gc": 0,
+        "dg": 0,
+        "pts": 1
       },
       {
         "id": "team-001",
@@ -2897,22 +2913,6 @@
         "codeFifa": "CUW",
         "codeIso": "CW",
         "urlFlag": "https://flagcdn.com/cw.svg",
-        "grupo": "E",
-        "pj": 0,
-        "pg": 0,
-        "pe": 0,
-        "pp": 0,
-        "gf": 0,
-        "gc": 0,
-        "dg": 0,
-        "pts": 0
-      },
-      {
-        "id": "team-018",
-        "nombre": "Ecuador",
-        "codeFifa": "ECU",
-        "codeIso": "EC",
-        "urlFlag": "https://flagcdn.com/ec.svg",
         "grupo": "E",
         "pj": 0,
         "pg": 0,
@@ -3388,36 +3388,36 @@
     ],
     "A": [
       {
-        "id": "team-014",
-        "nombre": "Corea del Sur",
-        "codeFifa": "KOR",
-        "codeIso": "KR",
-        "urlFlag": "https://flagcdn.com/kr.svg",
-        "grupo": "A",
-        "pj": 0,
-        "pg": 0,
-        "pe": 0,
-        "pp": 0,
-        "gf": 0,
-        "gc": 0,
-        "dg": 0,
-        "pts": 0
-      },
-      {
         "id": "team-032",
         "nombre": "México",
         "codeFifa": "MEX",
         "codeIso": "MX",
         "urlFlag": "https://flagcdn.com/mx.svg",
         "grupo": "A",
-        "pj": 0,
-        "pg": 0,
+        "pj": 1,
+        "pg": 1,
         "pe": 0,
         "pp": 0,
-        "gf": 0,
+        "gf": 2,
         "gc": 0,
-        "dg": 0,
-        "pts": 0
+        "dg": 2,
+        "pts": 3
+      },
+      {
+        "id": "team-014",
+        "nombre": "Corea del Sur",
+        "codeFifa": "KOR",
+        "codeIso": "KR",
+        "urlFlag": "https://flagcdn.com/kr.svg",
+        "grupo": "A",
+        "pj": 1,
+        "pg": 1,
+        "pe": 0,
+        "pp": 0,
+        "gf": 2,
+        "gc": 1,
+        "dg": 1,
+        "pts": 3
       },
       {
         "id": "team-040",
@@ -3426,13 +3426,13 @@
         "codeIso": "CZ",
         "urlFlag": "https://flagcdn.com/cz.svg",
         "grupo": "A",
-        "pj": 0,
+        "pj": 1,
         "pg": 0,
         "pe": 0,
-        "pp": 0,
-        "gf": 0,
-        "gc": 0,
-        "dg": 0,
+        "pp": 1,
+        "gf": 1,
+        "gc": 2,
+        "dg": -1,
         "pts": 0
       },
       {
@@ -3442,13 +3442,13 @@
         "codeIso": "ZA",
         "urlFlag": "https://flagcdn.com/za.svg",
         "grupo": "A",
-        "pj": 0,
+        "pj": 1,
         "pg": 0,
         "pe": 0,
-        "pp": 0,
+        "pp": 1,
         "gf": 0,
-        "gc": 0,
-        "dg": 0,
+        "gc": 2,
+        "dg": -2,
         "pts": 0
       }
     ],
@@ -3592,14 +3592,14 @@
         "codeIso": "SE",
         "urlFlag": "https://flagcdn.com/se.svg",
         "grupo": "F",
-        "pj": 0,
-        "pg": 0,
+        "pj": 1,
+        "pg": 1,
         "pe": 0,
         "pp": 0,
-        "gf": 0,
+        "gf": 3,
         "gc": 0,
-        "dg": 0,
-        "pts": 0
+        "dg": 3,
+        "pts": 3
       },
       {
         "id": "team-029",
@@ -3608,14 +3608,14 @@
         "codeIso": "JP",
         "urlFlag": "https://flagcdn.com/jp.svg",
         "grupo": "F",
-        "pj": 0,
-        "pg": 0,
+        "pj": 1,
+        "pg": 1,
         "pe": 0,
         "pp": 0,
-        "gf": 0,
-        "gc": 0,
-        "dg": 0,
-        "pts": 0
+        "gf": 3,
+        "gc": 1,
+        "dg": 2,
+        "pts": 3
       },
       {
         "id": "team-035",
@@ -3624,13 +3624,13 @@
         "codeIso": "NL",
         "urlFlag": "https://flagcdn.com/nl.svg",
         "grupo": "F",
-        "pj": 0,
+        "pj": 1,
         "pg": 0,
         "pe": 0,
-        "pp": 0,
-        "gf": 0,
-        "gc": 0,
-        "dg": 0,
+        "pp": 1,
+        "gf": 1,
+        "gc": 3,
+        "dg": -2,
         "pts": 0
       },
       {
@@ -3640,18 +3640,18 @@
         "codeIso": "TN",
         "urlFlag": "https://flagcdn.com/tn.svg",
         "grupo": "F",
-        "pj": 0,
+        "pj": 1,
         "pg": 0,
         "pe": 0,
-        "pp": 0,
+        "pp": 1,
         "gf": 0,
-        "gc": 0,
-        "dg": 0,
+        "gc": 3,
+        "dg": -3,
         "pts": 0
       }
     ]
   },
-  "lastUpdated": 1781285980650,
+  "lastUpdated": 1781286029277,
   "totalMatches": 104,
   "syncedBy": "sistema"
 }
