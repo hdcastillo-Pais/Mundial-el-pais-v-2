@@ -78,7 +78,7 @@
     "match-004": {
       "id": "match-004",
       "fase": "Fase de grupos",
-      "estado": "Programado",
+      "estado": "Finalizado",
       "grupo": "D",
       "fecha": "2026-06-12",
       "hora": "20:00",
@@ -88,7 +88,7 @@
         "codeFifa": "USA",
         "codeIso": "US",
         "urlFlag": "https://flagcdn.com/us.svg",
-        "goles": 0,
+        "goles": 3,
         "id": "team-022"
       },
       "visitante": {
@@ -3058,43 +3058,27 @@
     ],
     "D": [
       {
-        "id": "team-005",
-        "nombre": "Australia",
-        "codeFifa": "AUS",
-        "codeIso": "AU",
-        "urlFlag": "https://flagcdn.com/au.svg",
-        "grupo": "D",
-        "pj": 0,
-        "pg": 0,
-        "pe": 0,
-        "pp": 0,
-        "gf": 0,
-        "gc": 0,
-        "dg": 0,
-        "pts": 0
-      },
-      {
         "id": "team-022",
         "nombre": "Estados Unidos",
         "codeFifa": "USA",
         "codeIso": "US",
         "urlFlag": "https://flagcdn.com/us.svg",
         "grupo": "D",
-        "pj": 0,
-        "pg": 0,
+        "pj": 1,
+        "pg": 1,
         "pe": 0,
         "pp": 0,
-        "gf": 0,
+        "gf": 3,
         "gc": 0,
-        "dg": 0,
-        "pts": 0
+        "dg": 3,
+        "pts": 3
       },
       {
-        "id": "team-037",
-        "nombre": "Paraguay",
-        "codeFifa": "PAR",
-        "codeIso": "PY",
-        "urlFlag": "https://flagcdn.com/py.svg",
+        "id": "team-005",
+        "nombre": "Australia",
+        "codeFifa": "AUS",
+        "codeIso": "AU",
+        "urlFlag": "https://flagcdn.com/au.svg",
         "grupo": "D",
         "pj": 0,
         "pg": 0,
@@ -3119,6 +3103,22 @@
         "gf": 0,
         "gc": 0,
         "dg": 0,
+        "pts": 0
+      },
+      {
+        "id": "team-037",
+        "nombre": "Paraguay",
+        "codeFifa": "PAR",
+        "codeIso": "PY",
+        "urlFlag": "https://flagcdn.com/py.svg",
+        "grupo": "D",
+        "pj": 1,
+        "pg": 0,
+        "pe": 0,
+        "pp": 1,
+        "gf": 0,
+        "gc": 3,
+        "dg": -3,
         "pts": 0
       }
     ],
@@ -3651,7 +3651,7 @@
       }
     ]
   },
-  "lastUpdated": 1781286358345,
+  "lastUpdated": 1781286449759,
   "totalMatches": 104,
   "syncedBy": "sistema"
 }
